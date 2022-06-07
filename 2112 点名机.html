@@ -1,0 +1,83 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2112 点名机</title>
+    <style>
+        .wrapper{
+            width: 800px;
+            margin: 100px auto;
+            border: 3px solid #ddd;
+            text-align: center;
+            background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+        }
+        .box li{
+            vertical-align: top;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+            background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+        }
+        .wrapper button{
+            border: none;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            cursor: pointer;
+            outline: none;
+            margin-top: 20px;
+            font-weight: bolder;
+            color: #333;
+            background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+        }
+        .wrapper button{
+            display: inline-block;
+        }
+        body{
+            background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+     <h1 align="center">2112 点名机</h1>
+        <h6 id="data" align="right"></h6>
+        <ul class="box"></ul>
+        <button class="start">开始</button>
+        <button class="stop">停止</button>
+        <h3>注 : ( 按一下 “开始” 键开始随机， 按下 “停止” 键停止随机 )</h3>
+		<h3>作者 : 邹政皓</h3>
+    </div> 
+</body>
+<script>
+    var boxUl = document.getElementsByClassName('box')[0];
+    var start = document.getElementsByClassName('start')[0];
+    var stop = document.getElementsByClassName('stop')[0];
+    var oLi = document.getElementsByTagName('li');
+    var nameString = new String("1 号 肖舒文,2 号 李悦之,3 号 王思睿,4 号 胡译涵,5 号 谢予宁,6 号 韩欣妤,7 号 李水清,8 号 赵一凡,9 号 聂鸿杰,10 号 邹巧,11 号 温烁楠,12 号 刘沛言,13 号 钟杰,14 号 陈剑锋,15 号 詹克晨,16 号 钟欣澜,17 号 王浩菁,18 号 黄科文,19 号 鄢思秦,20 号 肖怡璿,21 号 陈俊宇,22 号 朱语琦,23 号 吴政辰,24 号 陈潇,25 号 郑艾,26 号 连寰,27 号 罗梓瑄,28 号 何怡君,29 号 黄星童,30 号 张芸,31 号 聂铭佑,32 号 袁蛟榆,33 号 刘轩齐,34 号 肖孟飞,35 号 刘一川,36 号 张轩荣,37 号 潘羿霖,38 号 朱子深,39 号 郭雨菲,40 号 梁珈铭,41 号 田溢,42 号 邹政皓,43 号 肖智煜,44 号 何昆容,45 号 王戬,46 号 吴云翔,47 号 林思妤,48 号 吴中荣,49 号 曾维睿,50 号 钟明玥,51 号 吴惠羽");
+    var nameArr = nameString.split(",");
+    var str = "";
+    for (let i = 0; i < nameArr.length; i++) {
+        str += "<li>" + nameArr[i] + "</li>"
+    }
+    boxUl.innerHTML = str;
+    var timer = null;
+    start.onclick = function () {
+        timer = setInterval(function () {
+            var i = Math.floor(Math.random() * nameArr.length);
+            for (var j = 0; j < oLi.length; j++) {
+                oLi[j].removeAttribute("style");
+            }
+            oLi[i].style.background = "red";
+        }, 15);
+    };
+    stop.onclick = function () {
+        clearInterval(timer);
+    }
+</script>
+</html>
