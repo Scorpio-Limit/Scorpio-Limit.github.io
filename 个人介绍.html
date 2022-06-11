@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Scorpio 个人介绍</title>
+<style>
+    @keyframes show{
+        0%{
+            margin-top:0px; 
+            transform:translateY(30);
+        }
+        100%{
+            margin-top:70px;  
+        }
+    }
+	body{
+		background-image:url(2.PNG);
+        background-attachment:fixed;
+        color:#fff;
+	}
+    div{
+         color:rgb(224, 245, 247);
+    }
+    table{
+        background-color:rgb(128, 223, 240);
+        color:rgb(224, 245, 247);
+        animation:show 1s;
+        margin-top:70px; 
+    }
+    td{
+        border-radius:25px;
+    }
+	td:visited{
+		display:block;
+		font-weight:bold;
+		color:rgb(221, 221, 221);
+		background-color:rgb(52, 73, 94);
+		width:170px;
+		text-align:center;
+		padding:8px;
+		text-decoration:none;
+		text-transform:uppercase;
+	}
+	td:hover,td:active{	
+		background-color:#60aecc;
+	}
+    .one{
+        background-color:rgb(133, 73, 230);
+        color:rgb(166, 226, 208);
+    }
+    .two{
+        background-color:rgb(218, 199, 31);
+        color:rgb(34, 37, 216);
+    }
+    .three{
+        background-color:rgb(218, 90, 31);
+        color:rgb(34, 216, 110);
+    }
+    .four{
+        color:rgb(175, 90, 56)
+    }
+    .five{
+        border-radius:25px;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <table border='1' align="center">
+            <tr class="four"><td colspan=10 align="center" class="one">个人简历</td></tr>
+            <tr class="four"><td class="one" align="center">姓名</td><td align="center">邹政皓</td><td class="one" align="center">性别</td><td align="center">男</td><td class="one" align="center">岁数</td><td align="center">13</td><td><img src="3.PNG" class="five" meight="170px" width="170px"></td></tr>
+            <tr class="four"><td class="two" align="center">毕业院校</td><td colspan=2 align="center">文清外国语学校</td><td class="two" align="center">家庭住址</td><td colspan=3 align="center">如上图</td></tr>
+            <tr class="four"><td class="three" align="center">特长</td><td colspan=2 align="center">打代码</td><td class="three" align="center">爱好</td><td colspan=3 align="center">踢足球</td></tr>
+        </table>
+    </div>
+</body>
+</html>
