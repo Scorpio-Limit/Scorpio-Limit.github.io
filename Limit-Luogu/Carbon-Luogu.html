@@ -1,0 +1,2000 @@
+<html>
+    <haed>
+        <title>Scorpio-Luogu</title>
+        <style>
+            h1, table {
+                color:rgb(206, 255, 239);
+            }
+            body {
+                background-image:url(3.png);
+                background-attachment:fixed;
+            }
+            div{
+                border-radius:25px;
+                background-color:rgb(175, 175, 169);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">Scorpio-Luogu</h1>
+        <div>
+            <table align="center">
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:300;</th></tr>
+                <tr><th>    src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OX-hpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:300;</th></tr>
+                <tr><th>    src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OVuhpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:300;</th></tr>
+                <tr><th>    src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXuhpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+1F00-1FFF</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:300;</th></tr>
+                <tr><th>    src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUehpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0370-03FF</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:300;</th></tr>
+                <tr><th>    src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXehpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:300;</th></tr>
+                <tr><th>    src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OXOhpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:300;</th></tr>
+                <tr><th>    src:local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:400;</th></tr>
+                <tr><th>    src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:400;</th></tr>
+                <tr><th>    src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:400;</th></tr>
+                <tr><th>    src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+1F00-1FFF</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:400;</th></tr>
+                <tr><th>    src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0370-03FF</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:400;</th></tr>
+                <tr><th>    src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:400;</th></tr>
+                <tr><th>    src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:400;</th></tr>
+                <tr><th>    src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:600;</th></tr>
+                <tr><th>    src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOX-hpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:600;</th></tr>
+                <tr><th>    src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOVuhpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:600;</th></tr>
+                <tr><th>    src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXuhpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+1F00-1FFF</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:600;</th></tr>
+                <tr><th>    src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUehpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0370-03FF</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:600;</th></tr>
+                <tr><th>    src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXehpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:600;</th></tr>
+                <tr><th>    src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOXOhpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:600;</th></tr>
+                <tr><th>    src:local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhp.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:700;</th></tr>
+                <tr><th>    src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOX-hpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:700;</th></tr>
+                <tr><th>    src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOVuhpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:700;</th></tr>
+                <tr><th>    src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXuhpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+1F00-1FFF</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:700;</th></tr>
+                <tr><th>    src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUehpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0370-03FF</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:700;</th></tr>
+                <tr><th>    src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXehpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:700;</th></tr>
+                <tr><th>    src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@font-face {</th></tr>
+                <tr><th>    font-family:'Open Sans';</th></tr>
+                <tr><th>    font-style:normal;</th></tr>
+                <tr><th>    font-weight:700;</th></tr>
+                <tr><th>    src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');</th></tr>
+                <tr><th>    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>/*--全局*/</th></tr>
+                <tr><th> html, body {</th></tr>
+                <tr><th>    background-color:#f4f5f7 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>html, body {</th></tr>
+                <tr><th>    font-family:'open sans' !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>body {</th></tr>
+                <tr><th>    overflow-x: hidden;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>h1, h2, h3, h4, h5, h6 {</th></tr>
+                <tr><th>    font-weight: 600 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>*>h2:first-child {</th></tr>
+                <tr><th>    margin-bottom: 1.6rem;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.card .color-default {</th></tr>
+                <tr><th>    color:#5e72e4 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-header, .lg-header-list>li {</th></tr>
+                <tr><th>    background-color: #555abf;</th></tr>
+                <tr><th>    border-color: #555abf;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-header {</th></tr>
+                <tr><th>    box-shadow: 0 5px 15px rgba(50, 50, 93, .1), 0 5px 8px rgba(0, 0, 0, .07)!important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> code, .hljs {</th></tr>
+                <tr><th>    font-family: consolas, monospace, "Courier New";</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> #nprogress .nprogress-peg {</th></tr>
+                <tr><th>    box-shadow: none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>#nprogress .nprogress-bar {</th></tr>
+                <tr><th>    position: fixed;</th></tr>
+                <tr><th>    top: 0 !important;</th></tr>
+                <tr><th>    background: #5eb95e;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> *::selection {</th></tr>
+                <tr><th>    background-color: #cce2ff;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>*::-moz-selection {</th></tr>
+                <tr><th>    background-color: #cce2ff;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>*::-webkit-selection {</th></tr>
+                <tr><th>    background-color: #cce2ff;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> ::-webkit-scrollbar {</th></tr>
+                <tr><th>    width: 6px;</th></tr>
+                <tr><th>    height: 10px;</th></tr>
+                <tr><th>    background-color: rgba(0, 0, 0, 0);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>::-webkit-scrollbar-track {</th></tr>
+                <tr><th>    background-color: rgba(0, 0, 0, 0.05);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>::-webkit-scrollbar-thumb {</th></tr>
+                <tr><th>    background-color: rgba(0, 0, 0, 0.2);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>::-webkit-scrollbar-thumb:hover {</th></tr>
+                <tr><th>    background-color: #5e72e4;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> a {</th></tr>
+                <tr><th>    transition:all .15s;</th></tr>
+                <tr><th>    color: #5e72e4;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-fg-green {</th></tr>
+                <tr><th>    color: #2dce89 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-bg-red {</th></tr>
+                <tr><th>    background-color: #fb6340;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-bg-orange {</th></tr>
+                <tr><th>    background-color: #ff9d09;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-bg-purple {</th></tr>
+                <tr><th>    background-color: #8e44ad;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-bg-green {</th></tr>
+                <tr><th>    background-color: #2dce89;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-bg-bluedark {</th></tr>
+                <tr><th>    background-color: #001277;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> @keyframes fadeInLeft {</th></tr>
+                <tr><th>    from {</th></tr>
+                <tr><th>        opacity:0;</th></tr>
+                <tr><th>        transform:translateX(-35px);</th></tr>
+                <tr><th>    }</th></tr>
+                <tr><th>    to {</th></tr>
+                <tr><th>        opacity:1;</th></tr>
+                <tr><th>        transform:translateX(0);</th></tr>
+                <tr><th>    }</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@keyframes fade {</th></tr>
+                <tr><th>    from {</th></tr>
+                <tr><th>        opacity:0;</th></tr>
+                <tr><th>    }</th></tr>
+                <tr><th>    to {</th></tr>
+                <tr><th>        opacity:1;</th></tr>
+                <tr><th>    }</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> #app > .lfe-body {</th></tr>
+                <tr><th>    background:#fafafa !important</th></tr>
+                <tr><th>    linear-gradient(30deg,#7795f8 15%,#6772e5 70%,#555abf 94%)</th></tr>
+                <tr><th>    ;</th></tr>
+                <tr><th>    box-shadow: 4px 5px 15px rgba(50, 50, 93, .1), 2px 5px 8px rgba(0, 0, 0, .07)!important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>#app > .lfe-body > a {</th></tr>
+                <tr><th>    color: #cce2ff !important;</th></tr>
+                <tr><th>    height:3.7em;</th></tr>
+                <tr><th>    margin-top:3px;</th></tr>
+                <tr><th>    padding:0 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>#app > .lfe-body > a:first-of-type {</th></tr>
+                <tr><th>    margin-top: 10px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>#app > .lfe-body > a > .icon {</th></tr>
+                <tr><th>    line-height: 2.4em;</th></tr>
+                <tr><th>    font-size: 18px;</th></tr>
+                <tr><th>    width: 100%;</th></tr>
+                <tr><th>    margin: 0 !important;</th></tr>
+                <tr><th>    transition: all 0.3s ease;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>#app > .lfe-body > a > .text {</th></tr>
+                <tr><th>    opacity:0;</th></tr>
+                <tr><th>    margin-top: -1em;</th></tr>
+                <tr><th>    display: block;</th></tr>
+                <tr><th>    transition: all 0.3s ease;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>#app > .lfe-body > a:hover > .icon {</th></tr>
+                <tr><th>    line-height: 1.5em;</th></tr>
+                <tr><th>    font-size: 17px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>#app > .lfe-body > a:hover > .text {</th></tr>
+                <tr><th>    opacity:1;</th></tr>
+                <tr><th>    margin-top: 0.2em;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>#app > .lfe-body > div:first-of-type {</th></tr>
+                <tr><th>    background-color: #5e72e4 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>#app > .lfe-body > .popup-button {</th></tr>
+                <tr><th>    background-color: transparent !important;</th></tr>
+                <tr><th>    margin-top:8px;</th></tr>
+                <tr><th>    color: #5e72e4 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-sidebar-list li[class^="lg-nav"] a span[class^="am-icon"]:after {</th></tr>
+                <tr><th>    content:"";</th></tr>
+                <tr><th>    background: #5e72e4;</th></tr>
+                <tr><th>    position: absolute;</th></tr>
+                <tr><th>    left: 50%;</th></tr>
+                <tr><th>    right: 50%;</th></tr>
+                <tr><th>    bottom: 8px;</th></tr>
+                <tr><th>    height: 2px;</th></tr>
+                <tr><th>    width: 0px;</th></tr>
+                <tr><th>    border-radius: 10px;</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-sidebar-list li[class^="lg-nav"] a:hover span[class^="am-icon"]:after {</th></tr>
+                <tr><th>    left: 40%;</th></tr>
+                <tr><th>    right: 40%;</th></tr>
+                <tr><th>    width: 20%;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .am-input-group, .input-group {</th></tr>
+                <tr><th>    transition: box-shadow .15s ease;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-input-group {</th></tr>
+                <tr><th>    border-radius: .5rem !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-form-field, .input-group > .input-wrap > input, .input-wrap > input {</th></tr>
+                <tr><th>    transition: box-shadow .15s ease;</th></tr>
+                <tr><th>    border:none !important;</th></tr>
+                <tr><th>    border-radius: 4px !important;</th></tr>
+                <tr><th>    box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02);</th></tr>
+                <tr><th>    min-height:25px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-form-field:focus, .input-group > .input-wrap > input:focus, .input-wrap > input:focus {</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .08), 0 1px 3px rgba(0, 0, 0, .05) !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-form-field, .input-group > button {</th></tr>
+                <tr><th>    transition: box-shadow .15s ease;</th></tr>
+                <tr><th>    border:none;</th></tr>
+                <tr><th>    border-radius: 4px !important;</th></tr>
+                <tr><th>    box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.input-group > button {</th></tr>
+                <tr><th>    margin-left:3px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-form-field, .input-group > button:hover {</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .08), 0 1px 3px rgba(0, 0, 0, .05) !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-input-group-sm>.am-form-field, .am-input-group-sm>.am-input-group-btn>.am-btn, .am-input-group-sm>.am-input-group-label {</th></tr>
+                <tr><th>    font-size: 1.35rem !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-input-group-label {</th></tr>
+                <tr><th>    background: transparent;</th></tr>
+                <tr><th>    border: none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-input-group-danger, .am-input-group-primary {</th></tr>
+                <tr><th>    box-shadow:none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-input-group-danger > .am-input-group-label, .am-input-group-primary > .am-input-group-label {</th></tr>
+                <tr><th>    border-radius:.5rem !important;</th></tr>
+                <tr><th>    outline:none !important;</th></tr>
+                <tr><th>    letter-spacing: .05em;</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    color: #fff !important;</th></tr>
+                <tr><th>    margin-bottom:6px;</th></tr>
+                <tr><th>    height:33.4px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-input-group-danger > .am-input-group-label:hover, .am-input-group-primary > .am-input-group-label:hover {</th></tr>
+                <tr><th>    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-input-group-danger > .am-input-group-label:active, .am-input-group-primary > .am-input-group-label:active {</th></tr>
+                <tr><th>    box-shadow: none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-input-group-danger > .am-input-group-label {</th></tr>
+                <tr><th>    border-color: #f5365c;</th></tr>
+                <tr><th>    background-color: #f5365c;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-input-group-primary > .am-input-group-label {</th></tr>
+                <tr><th>    border-color: #5e72e4;</th></tr>
+                <tr><th>    background-color: #5e72e4;</th></tr>
+                <tr><th>    border-radius: .5rem !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>textarea {</th></tr>
+                <tr><th>    box-shadow: 0 1px 3px rgba(50, 50, 93, .15), 0 1px 0 rgba(0, 0, 0, .02);</th></tr>
+                <tr><th>    border:none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>textarea:focus {</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .08), 0 1px 3px rgba(0, 0, 0, .05) !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-input-title {</th></tr>
+                <tr><th>    margin-bottom: 5px;</th></tr>
+                <tr><th>    border-radius: 5px;</th></tr>
+                <tr><th>    border-color: #ddd;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> #topbar-search-text {</th></tr>
+                <tr><th>    border-radius:.5rem 0 0 .5em !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>#topbar-search {</th></tr>
+                <tr><th>    border-radius:0 .5rem .5em 0 !important;</th></tr>
+                <tr><th>    border-color: #5e72e4;</th></tr>
+                <tr><th>    background-color: #5e72e4;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-article, .lg-summary, .lg-article-sub, .card {</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>    box-shadow: 0 5px 15px rgba(50, 50, 93, .1), 0 5px 8px rgba(0, 0, 0, .07)!important;</th></tr>
+                <tr><th>    word-wrap: break-word;</th></tr>
+                <tr><th>    border-radius: .25rem;</th></tr>
+                <tr><th>    background-color: #fcfcfc !important;</th></tr>
+                <tr><th>    overflow: visible !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-article:hover, .lg-summary:hover, .lg-article-sub:hover, .card:hover {</th></tr>
+                <tr><th>    box-shadow: 0 10px 30px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07)!important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.card {</th></tr>
+                <tr><th>    line-height: 1.8;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .am-btn {</th></tr>
+                <tr><th>    outline:none !important;</th></tr>
+                <tr><th>    border:none !important;</th></tr>
+                <tr><th>    letter-spacing: .05em;</th></tr>
+                <tr><th>    padding: 8px 18px;</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    color: #fff !important;</th></tr>
+                <tr><th>    margin-bottom:6px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-dropdown > .am-btn {</th></tr>
+                <tr><th>    color: inherit !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>button[type='button'] {</th></tr>
+                <tr><th>    outline:none !important;</th></tr>
+                <tr><th>    border:none !important;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>    margin-bottom:6px;</th></tr>
+                <tr><th>    padding: 8px 18px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-btn.am-disabled, .am-btn[disabled], fieldset[disabled] .am-btn, button[type='button'][disabled], button.disabled[type='button'] {</th></tr>
+                <tr><th>    box-shadow:none;</th></tr>
+                <tr><th>    opacity: .65;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-btn:hover, button[type='button']:hover {</th></tr>
+                <tr><th>    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    transform: translateY(-1px);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-btn:active, button[type='button']:active {</th></tr>
+                <tr><th>    box-shadow: none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-btn-danger, .am-btn-danger:hover, .am-btn-danger:active, .am-btn-danger:focus, .am-btn-danger:visited {</th></tr>
+                <tr><th>    border-color: #f5365c;</th></tr>
+                <tr><th>    background-color: #f5365c;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-btn-primary, .am-btn-primary:hover, .am-btn-primary:active, .am-btn-primary:focus, a.am-btn-primary:visited {</th></tr>
+                <tr><th>    border-color: #5e72e4;</th></tr>
+                <tr><th>    background-color: #5e72e4;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-btn-success, .am-btn-success:hover, .am-btn-success:active, .am-btn-success:focus, a.am-btn-success:visited {</th></tr>
+                <tr><th>    border-color: #2dce89;</th></tr>
+                <tr><th>    background-color: #2dce89;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-btn-warning, .am-btn-warning:hover, .am-btn-warning:active, .am-btn-warning:focus, a.am-btn-warning:visited {</th></tr>
+                <tr><th>    border-color: #fb6340;</th></tr>
+                <tr><th>    background-color: #fb6340;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .copy-btn {</th></tr>
+                <tr><th>    border-color: #5e72e4!important;</th></tr>
+                <tr><th>    background-color: #5e72e4 !important;</th></tr>
+                <tr><th>    color: #fff !important;</th></tr>
+                <tr><th>    margin-top: 3px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .tip-twitter {</th></tr>
+                <tr><th>    background:#172b4d;</th></tr>
+                <tr><th>    color:#fff;</th></tr>
+                <tr><th>    border-radius:50px;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.tip-twitter>div {</th></tr>
+                <tr><th>    font-weight:unset !important;</th></tr>
+                <tr><th>    font-size:13px !important;</th></tr>
+                <tr><th>    margin-left:5px;</th></tr>
+                <tr><th>    margin-right:5px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .am-badge {</th></tr>
+                <tr><th>    border-radius:50px !important;</th></tr>
+                <tr><th>    padding-left:10px;</th></tr>
+                <tr><th>    padding-right:10px;</th></tr>
+                <tr><th>    padding-top:4px;</th></tr>
+                <tr><th>    padding-bottom:4px;</th></tr>
+                <tr><th>    transition:all .15s;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.tag span.lfe-caption, .difficulty span.lfe-caption {</th></tr>
+                <tr><th>    border-radius:50px !important;</th></tr>
+                <tr><th>    padding-left:10px;</th></tr>
+                <tr><th>    padding-right:10px;</th></tr>
+                <tr><th>    padding-top: 1px;</th></tr>
+                <tr><th>    padding-bottom: 1px;</th></tr>
+                <tr><th>    transition:all .15s;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-badge:hover, .tag span.lfe-caption:hover, .difficulty span.lfe-caption:hover {</th></tr>
+                <tr><th>    transform: translateY(-1px);</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-badge, .lfe-caption[slot='difficulty'], .lfe-caption.tag, .tags-wrap {</th></tr>
+                <tr><th>    overflow:visible !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-badge.lg-bg-red {</th></tr>
+                <tr><th>    background-color: #f80031;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-badge.lg-bg-orange {</th></tr>
+                <tr><th>    background-color: #ff471d;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-badge.lg-bg-yellow {</th></tr>
+                <tr><th>    background-color: #ff9d09;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-badge.lg-bg-green {</th></tr>
+                <tr><th>    background-color: #1aae6f;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-badge.lg-bg-bluelight {</th></tr>
+                <tr><th>    background-color: #03acca;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-badge.lg-bg-purple {</th></tr>
+                <tr><th>    background-color: #8e44ad;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-badge.lg-bg-bluedark {</th></tr>
+                <tr><th>    background-color: #001277;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-badge.am-badge-warning {</th></tr>
+                <tr><th>    background-color: #fb6340;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .am-dropdown-content {</th></tr>
+                <tr><th>    padding: 1.5rem;</th></tr>
+                <tr><th>    border-radius: .25rem;</th></tr>
+                <tr><th>    background: #fff;</th></tr>
+                <tr><th>    width:300px;</th></tr>
+                <tr><th>    border:none;</th></tr>
+                <tr><th>    margin-top:5px;</th></tr>
+                <tr><th>    box-shadow: 0 50px 100px rgba(50, 50, 93, .1), 0 15px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .1);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-dropdown-content:before, .am-dropdown-content:after {</th></tr>
+                <tr><th>    display:none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-unread {</th></tr>
+                <tr><th>    line-height: 60px;</th></tr>
+                <tr><th>    width: 60px;</th></tr>
+                <tr><th>    height: 60px;</th></tr>
+                <tr><th>    padding: 0;</th></tr>
+                <tr><th>    text-align: center;</th></tr>
+                <tr><th>    border-radius: 50%;</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>    color: #fff;</th></tr>
+                <tr><th>    background-color: #5e72e4;</th></tr>
+                <tr><th>    box-shadow:0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    overflow:hidden;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .am-comment-main {</th></tr>
+                <tr><th>    border:none;</th></tr>
+                <tr><th>    box-shadow:0 3px 5px rgba(50, 50, 93, .1), 0 2px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    transition:all .15s;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-comment-main:hover {</th></tr>
+                <tr><th>    border:none;</th></tr>
+                <tr><th>    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-comment-main:before, .am-comment-main:after {</th></tr>
+                <tr><th>    display:none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .main-container > .header-layout {</th></tr>
+                <tr><th>    height: 380px !important;</th></tr>
+                <tr><th>    display: block;</th></tr>
+                <tr><th>    position: relative !important;</th></tr>
+                <tr><th>    left: 0 !important;</th></tr>
+                <tr><th>    right: 0 !important;</th></tr>
+                <tr><th>    background: linear-gradient(87deg, ##FFFFFF00 0, ##FFFFFF00 100%) !important;</th></tr>
+                <tr><th>    border: none;</th></tr>
+                <tr><th>    color: #fff;</th></tr>
+                <tr><th>    font-weight: unset !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.main-container > .header-layout .background {</th></tr>
+                <tr><th>    display: none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.main-container > .header-layout > .header {</th></tr>
+                <tr><th>    max-width:1250px;</th></tr>
+                <tr><th>    background: transparent !important;</th></tr>
+                <tr><th>    padding-left: 35px;</th></tr>
+                <tr><th>    position: relative;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.main-container > .header-layout > .header .user-nav {</th></tr>
+                <tr><th>    right: 0;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@media screen and(max-width:1475px) {</th></tr>
+                <tr><th>    .main-container > .header-layout > .header {</th></tr>
+                <tr><th>        position: initial;</th></tr>
+                <tr><th>    }</th></tr>
+                <tr><th>    .main-container > .header-layout > .header .user-nav {</th></tr>
+                <tr><th>        right: calc(80px);</th></tr>
+                <tr><th>    }</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.main-container > .header-layout > .header > h1 {</th></tr>
+                <tr><th>    font-size: 50px;</th></tr>
+                <tr><th>    margin-top:25px;</th></tr>
+                <tr><th>    padding-bottom: 8px;</th></tr>
+                <tr><th>    animation: fadeInLeft .5s ease;</th></tr>
+                <tr><th>    max-width: calc(100vw - 150px);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.main-container > main.lfe-body {</th></tr>
+                <tr><th>    margin-top: -180px;</th></tr>
+                <tr><th>    position: relative;</th></tr>
+                <tr><th>    background: transparent !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>@media screen and(max-width: 576px) {</th></tr>
+                <tr><th>    .main-container > main.lfe-body {</th></tr>
+                <tr><th>        margin-top: -60px;</th></tr>
+                <tr><th>    }</th></tr>
+                <tr><th>    .main-container > .header-layout > .header {</th></tr>
+                <tr><th>        padding-left: 5px;</th></tr>
+                <tr><th>    }</th></tr>
+                <tr><th>    .main-container > .header-layout > .header > h1 {</th></tr>
+                <tr><th>        font-size: 35px;</th></tr>
+                <tr><th>    }</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .main-container > .header-layout .bread-crumb, .main-container > .header-layout .bread-crumb a {</th></tr>
+                <tr><th>    color: rgba(255, 255, 255, .8) !important;</th></tr>
+                <tr><th>    text-decoration:none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-main-content.solution-block {</th></tr>
+                <tr><th>    margin-top:0 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .main-container > header .bread-crumb, .main-container > header .bread-crumb a {</th></tr>
+                <tr><th>    color: rgba(255, 255, 255, .8) !important;</th></tr>
+                <tr><th>    text-decoration:none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-main-content.solution-block {</th></tr>
+                <tr><th>    margin-top:0 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-content-table-left {</th></tr>
+                <tr><th>    background:#fcfcfc;</th></tr>
+                <tr><th>    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15) !important;</th></tr>
+                <tr><th>    border-radius: .375rem;</th></tr>
+                <tr><th>    margin-top:20px;</th></tr>
+                <tr><th>    padding-left:30px;</th></tr>
+                <tr><th>    padding-right:30px;</th></tr>
+                <tr><th>    padding-bottom: 20px;</th></tr>
+                <tr><th>    position: relative;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-content-table-left>.lg-table-row {</th></tr>
+                <tr><th>    width:100% !important;</th></tr>
+                <tr><th>    box-shadow:none;</th></tr>
+                <tr><th>    background:transparent;</th></tr>
+                <tr><th>    border-radius:0;</th></tr>
+                <tr><th>    border-bottom:0.6px solid rgba(0, 0, 0, 0.08);</th></tr>
+                <tr><th>    border-spacing: 2px;</th></tr>
+                <tr><th>    padding-bottom:20px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-content-table-left>.lg-table-row:last-of-type {</th></tr>
+                <tr><th>    border-bottom: none;</th></tr>
+                <tr><th>    padding-bottom: 0;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> div > .header-wrap {</th></tr>
+                <tr><th>    padding-bottom: 20px !important;</th></tr>
+                <tr><th>    font-size: 17px;</th></tr>
+                <tr><th>    border-bottom: 0.6px solid rgba(0, 0, 0, 0.08) !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>div > .header-wrap .lfe-caption {</th></tr>
+                <tr><th>    box-shadow: none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>div > .row-wrap {</th></tr>
+                <tr><th>    padding: 24px 0 !important;</th></tr>
+                <tr><th>    font-size: 17px;</th></tr>
+                <tr><th>    border-bottom: 0.6px solid rgba(0, 0, 0, 0.08) !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>div > .row-wrap:last-child {</th></tr>
+                <tr><th>    margin-bottom: 30px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>div > .row-wrap .lfe-caption {</th></tr>
+                <tr><th>    font-size:14px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .rate-wrapper .rate-popup {</th></tr>
+                <tr><th>    transition: all .25s ease !important;</th></tr>
+                <tr><th>    display: block !important;</th></tr>
+                <tr><th>    border-radius: 3px;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08) !important;</th></tr>
+                <tr><th>    min-width: 4em;</th></tr>
+                <tr><th>    min-height: 1em;</th></tr>
+                <tr><th>    width: 4em;</th></tr>
+                <tr><th>    height: 1em;</th></tr>
+                <tr><th>    padding: 0 !important;</th></tr>
+                <tr><th>    margin-bottom: -15px;</th></tr>
+                <tr><th>    overflow: hidden !important;</th></tr>
+                <tr><th>    opacity: 0;</th></tr>
+                <tr><th>    color: transparent;</th></tr>
+                <tr><th>    background: transparent;</th></tr>
+                <tr><th>    pointer-events: none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.rate-wrapper:hover .rate-popup {</th></tr>
+                <tr><th>    border-radius: 30px;</th></tr>
+                <tr><th>    margin-bottom: 10px;</th></tr>
+                <tr><th>    min-width: 10em;</th></tr>
+                <tr><th>    min-height: 1em;</th></tr>
+                <tr><th>    width: unset;</th></tr>
+                <tr><th>    height: unset;</th></tr>
+                <tr><th>    padding: 5px 18px !important;</th></tr>
+                <tr><th>    opacity: .8;</th></tr>
+                <tr><th>    color: #fff;</th></tr>
+                <tr><th>    background: #172b4d;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .am-pagination, .page-area {</th></tr>
+                <tr><th>    padding-top:20px;</th></tr>
+                <tr><th>    padding-bottom:20px;</th></tr>
+                <tr><th>    width:max-content;</th></tr>
+                <tr><th>    width:-moz-max-content;</th></tr>
+                <tr><th>    margin-left:auto;</th></tr>
+                <tr><th>    margin-right:auto;</th></tr>
+                <tr><th>    border-top: none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-pagination > li > a, .page-area .page-bar > button {</th></tr>
+                <tr><th>    outline:none !important;</th></tr>
+                <tr><th>    cursor: pointer;</th></tr>
+                <tr><th>    line-height: 1.25;</th></tr>
+                <tr><th>    position: relative;</th></tr>
+                <tr><th>    display: block;</th></tr>
+                <tr><th>    margin-left: -.0625rem;</th></tr>
+                <tr><th>    padding: .5rem .75rem;</th></tr>
+                <tr><th>    color: #8898aa;</th></tr>
+                <tr><th>    border: .0625rem solid #dee2e6;</th></tr>
+                <tr><th>    background-color: #fff;</th></tr>
+                <tr><th>    font-size: 15px;</th></tr>
+                <tr><th>    font-weight: unset;</th></tr>
+                <tr><th>    display: flex;</th></tr>
+                <tr><th>    min-width: 36px;</th></tr>
+                <tr><th>    height: 36px;</th></tr>
+                <tr><th>    margin: 0 3px;</th></tr>
+                <tr><th>    border-radius: 100px!important;</th></tr>
+                <tr><th>    align-items: center;</th></tr>
+                <tr><th>    justify-content: center;</th></tr>
+                <tr><th>    transition:all .3s;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.page-area .page-bar > button:hover {</th></tr>
+                <tr><th>    background-color: #eee;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-pagination > .am-active > a, .page-area .page-bar > button[style*='background'] {</th></tr>
+                <tr><th>    color: #fff;</th></tr>
+                <tr><th>    border-color: #5e72e4 !important;</th></tr>
+                <tr><th>    background-color: #5e72e4 !important;</th></tr>
+                <tr><th>    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-pagination > .am-active > a:hover {</th></tr>
+                <tr><th>    color: #fff;</th></tr>
+                <tr><th>    border-color: #5e72e4;</th></tr>
+                <tr><th>    background-color: #5e72e4;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-article .pagination-centered:before {</th></tr>
+                <tr><th>    content:"";</th></tr>
+                <tr><th>    background: #f4f5f7;</th></tr>
+                <tr><th>    width: calc(100% + 35px);</th></tr>
+                <tr><th>    height: calc(100% + 40px);</th></tr>
+                <tr><th>    position: absolute;</th></tr>
+                <tr><th>    left: -15px;</th></tr>
+                <tr><th>    top: -10px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-record-tile {</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    border-radius:3px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-record-tile:hover {</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>    transform: translateY(-5px);</th></tr>
+                <tr><th>    box-shadow: 0 10px 30px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .test-case-wrap > .wrapper {</th></tr>
+                <tr><th>    width: 100px;</th></tr>
+                <tr><th>    height: 100px;</th></tr>
+                <tr><th>    margin-right: 16px;</th></tr>
+                <tr><th>    margin-bottom: 12px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap {</th></tr>
+                <tr><th>    margin-top: 25px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .test-case {</th></tr>
+                <tr><th>    width: 100px;</th></tr>
+                <tr><th>    height: 100px;</th></tr>
+                <tr><th>    transition: all .2s ease;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    border-radius:3px;</th></tr>
+                <tr><th>    padding: 3px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .test-case:hover {</th></tr>
+                <tr><th>    transform: translateY(-5px);</th></tr>
+                <tr><th>    box-shadow: 0 10px 30px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .test-case .info {</th></tr>
+                <tr><th>    width: calc(100% - 10px);</th></tr>
+                <tr><th>    line-height: 15px;</th></tr>
+                <tr><th>    font-size: 10px;</th></tr>
+                <tr><th>    white-space:nowrap;</th></tr>
+                <tr><th>    overflow:hidden;</th></tr>
+                <tr><th>    text-overflow:ellipsis;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .test-case:hover .info {</th></tr>
+                <tr><th>    white-space: normal;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .test-case .id {</th></tr>
+                <tr><th>    margin-left: 3px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .test-case .status {</th></tr>
+                <tr><th>    font-weight: bold;</th></tr>
+                <tr><th>    font-size: 22px;</th></tr>
+                <tr><th>    margin-bottom: 5px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .message {</th></tr>
+                <tr><th>    transition: all .25s ease !important;</th></tr>
+                <tr><th>    display: block !important;</th></tr>
+                <tr><th>    border-radius: 3px;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    min-width: 105px;</th></tr>
+                <tr><th>    min-height: 105px;</th></tr>
+                <tr><th>    width: 105px;</th></tr>
+                <tr><th>    padding: 0;</th></tr>
+                <tr><th>    margin-top: 40px;</th></tr>
+                <tr><th>    opacity: 0;</th></tr>
+                <tr><th>    color: transparent;</th></tr>
+                <tr><th>    background: transparent;</th></tr>
+                <tr><th>    pointer-events: none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper:hover .message {</th></tr>
+                <tr><th>    border-radius: 30px;</th></tr>
+                <tr><th>    margin-top: -30px;</th></tr>
+                <tr><th>    min-width: 12em;</th></tr>
+                <tr><th>    min-height: 1em;</th></tr>
+                <tr><th>    width: unset;</th></tr>
+                <tr><th>    height: unset;</th></tr>
+                <tr><th>    padding: 5px 18px;</th></tr>
+                <tr><th>    opacity: .8;</th></tr>
+                <tr><th>    color: #fff;</th></tr>
+                <tr><th>    background: #172b4d;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .test-case[style*='rgb(112, 173, 71)'] {</th></tr>
+                <tr><th>    background-color: #2dce89 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .test-case[style*='rgb(231, 76, 60)'] {</th></tr>
+                <tr><th>    background-color: #fb6340 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .test-case[style*='rgb(157, 61, 207)'] {</th></tr>
+                <tr><th>    background-color: #8e44ad !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .test-case[style*='rgb(5, 34, 66)'] {</th></tr>
+                <tr><th>    background-color: #001277 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .test-case[style*='rgb(14, 29, 105)'] {</th></tr>
+                <tr><th>    background-color: #34495e !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.test-case-wrap > .wrapper .test-case[style*='background: rgb(20, 85, 143);'] {</th></tr>
+                <tr><th>    background-color: #3498db !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .am-comment-avatar {</th></tr>
+                <tr><th>    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);</th></tr>
+                <tr><th>    border:none;</th></tr>
+                <tr><th>    transition:all .15s;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-comment-avatar:hover {</th></tr>
+                <tr><th>    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-panel-bd .am-comment-avatar, .lg-message-content .am-comment-avatar, .lg-message-contact .am-comment-avatar, .lg-inline-up .am-comment-avatar, .lg-header-li .am-comment-avatar {</th></tr>
+                <tr><th>    box-shadow:none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .am-panel {</th></tr>
+                <tr><th>    border:none;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .main-container > .lfe-body:last-child {</th></tr>
+                <tr><th>    padding: 0;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.main-container > .lfe-body:last-child .background {</th></tr>
+                <tr><th>    display: none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.main-container > .lfe-body:last-child > .footer {</th></tr>
+                <tr><th>    background:linear-gradient(150deg, #7795f8 15%, ##FFFFFF00 70%, #555abf 94%) !important;</th></tr>
+                <tr><th>    max-width: unset !important;</th></tr>
+                <tr><th>    padding: 25px 35px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.main-container > .lfe-body:last-child > .footer a {</th></tr>
+                <tr><th>    color:#fff !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.main-container > .lfe-body:last-child > .footer .qr-img {</th></tr>
+                <tr><th>    display:none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-mcard {</th></tr>
+                <tr><th>    border:none;</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>    box-shadow: 0 2px 3px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    border-radius:3px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-mcard:hover {</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>    transform: translateY(-1px);</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .feed-selector > a {</th></tr>
+                <tr><th>    font-weight: 500;</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>    color: #5e72e4;</th></tr>
+                <tr><th>    background-color: #fff;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    border-radius: 5px !important;</th></tr>
+                <tr><th>    height:50px;</th></tr>
+                <tr><th>    line-height:36px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.feed-selector.am-active > a {</th></tr>
+                <tr><th>    color: #fff;</th></tr>
+                <tr><th>    background: #5e72e4 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .am-nav-tabs li>a {</th></tr>
+                <tr><th>    font-weight: 500;</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>    color: #5e72e4;</th></tr>
+                <tr><th>    background-color: #fff;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    border-radius: 5px !important;</th></tr>
+                <tr><th>    height:50px;</th></tr>
+                <tr><th>    line-height:36px;</th></tr>
+                <tr><th>    padding-left:20px;</th></tr>
+                <tr><th>    padding-right:20px;</th></tr>
+                <tr><th>    border:none !important;</th></tr>
+                <tr><th>    margin-right:10px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-nav-tabs li.am-active>a {</th></tr>
+                <tr><th>    color: #fff !important;</th></tr>
+                <tr><th>    background: #5e72e4 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-nav-tabs {</th></tr>
+                <tr><th>    border:none;</th></tr>
+                <tr><th>    margin-bottom:20px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-tabs-bd {</th></tr>
+                <tr><th>    border-radius:5px;</th></tr>
+                <tr><th>    border:0.6px solid rgba(0, 0, 0, 0.1);</th></tr>
+                <tr><th>    background:transparent;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-table-small {</th></tr>
+                <tr><th>    margin-top:5px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-progress, .progress-frame {</th></tr>
+                <tr><th>    border-radius: .5rem;</th></tr>
+                <tr><th>    background-color: #e9ecef;</th></tr>
+                <tr><th>    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);</th></tr>
+                <tr><th>    border:none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-progress-bar-secondary, .am-progress-bar, .progress-frame > div {</th></tr>
+                <tr><th>    background-color: #5e72e4 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .am-ucheck-checkbox:checked+.am-ucheck-icons, .am-ucheck-checkbox:hover:not(.am-nohover):not(:disabled)+.am-ucheck-icons, .am-ucheck-radio:checked+.am-ucheck-icons, .am-ucheck-radio:hover:not(.am-nohover):not(:disabled)+.am-ucheck-icons {</th></tr>
+                <tr><th>    color: #5e72e4;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-checkbox .am-icon-unchecked:before, .am-checkbox-inline .am-icon-unchecked:before {</th></tr>
+                <tr><th>    content:"";</th></tr>
+                <tr><th>    border: 1px solid rgba(0, 0, 0, 0.1);</th></tr>
+                <tr><th>    height: 15px;</th></tr>
+                <tr><th>    width: 15px;</th></tr>
+                <tr><th>    border-radius: 3px;</th></tr>
+                <tr><th>    margin-top:3px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-info-box > #pic, .lg-info-box > .lg-stamp {</th></tr>
+                <tr><th>    display:none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-info-box {</th></tr>
+                <tr><th>    color: #fff;</th></tr>
+                <tr><th>    border-color: #555abf;</th></tr>
+                <tr><th>    background-color: #555abf;</th></tr>
+                <tr><th>    padding: 1rem 1.5rem;</th></tr>
+                <tr><th>    border: 0;</th></tr>
+                <tr><th>    border-radius: .25rem;</th></tr>
+                <tr><th>    min-height:100px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-info-box>.am-text-left>h1 {</th></tr>
+                <tr><th>    margin-bottom:10px;</th></tr>
+                <tr><th>    margin-top:10px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-info-box>.am-text-left>p {</th></tr>
+                <tr><th>    margin-top:0px;</th></tr>
+                <tr><th>    margin-bottom:0;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-info-box >.am-text-left .lg-small {</th></tr>
+                <tr><th>    margin-top:15px;</th></tr>
+                <tr><th>    margin-bottom:15px;</th></tr>
+                <tr><th>    color:rgba(255, 255, 255, 0.6);</th></tr>
+                <tr><th>    display:block;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .am-modal-dialog {</th></tr>
+                <tr><th>    box-shadow: 0 15px 35px rgba(50, 50, 93, .2), 0 5px 15px rgba(0, 0, 0, .17);</th></tr>
+                <tr><th>    border: 1px solid rgba(0, 0, 0, .2);</th></tr>
+                <tr><th>    border-radius: .5rem;</th></tr>
+                <tr><th>    outline: 0;</th></tr>
+                <tr><th>    background-color: #fff;</th></tr>
+                <tr><th>    background-clip: padding-box;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-modal-dialog>#lg-alert-title, .am-modal-dialog>#memtitle {</th></tr>
+                <tr><th>    font-family: inherit;</th></tr>
+                <tr><th>    font-weight: 400;</th></tr>
+                <tr><th>    line-height: 1.3;</th></tr>
+                <tr><th>    color: #32325d;</th></tr>
+                <tr><th>    text-align: left;</th></tr>
+                <tr><th>    padding-left: 15px;</th></tr>
+                <tr><th>    padding-bottom: 15px;</th></tr>
+                <tr><th>    border-bottom: 0.7px solid rgba(0, 0, 0, 0.1);</th></tr>
+                <tr><th>    margin-bottom: 15px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-modal-dialog>#lg-alert-message, .am-modal-dialog>#memadmin {</th></tr>
+                <tr><th>    line-height: 1.3;</th></tr>
+                <tr><th>    color: #32325d;</th></tr>
+                <tr><th>    text-align: left;</th></tr>
+                <tr><th>    padding-left: 15px;</th></tr>
+                <tr><th>    padding-bottom: 25px;</th></tr>
+                <tr><th>    padding-top: 10px;</th></tr>
+                <tr><th>    border-bottom: 0.7px solid rgba(0, 0, 0, 0.1);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-modal-dialog .lg-model-content {</th></tr>
+                <tr><th>    margin-top:10px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-modal-btn {</th></tr>
+                <tr><th>    outline:none !important;</th></tr>
+                <tr><th>    border:none !important;</th></tr>
+                <tr><th>    letter-spacing: .05em;</th></tr>
+                <tr><th>    padding: 8px 18px;</th></tr>
+                <tr><th>    transition: all .15s ease;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    color: #fafafa !important;</th></tr>
+                <tr><th>    height:unset;</th></tr>
+                <tr><th>    line-height:unset;</th></tr>
+                <tr><th>    border-radius:5px !important;</th></tr>
+                <tr><th>    margin-right:3px;</th></tr>
+                <tr><th>    display:inline-block !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-modal-btn:hover {</th></tr>
+                <tr><th>    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    transform: translateY(-1px);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-modal-btn:active {</th></tr>
+                <tr><th>    box-shadow: none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-modal-btn, .am-modal-btn:hover, .am-modal-btn:active, .am-modal-btn:focus, a.am-modal-btn:visited {</th></tr>
+                <tr><th>    border-color: #5e72e4;</th></tr>
+                <tr><th>    background-color: #5e72e4;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-modal-footer {</th></tr>
+                <tr><th>    width: max-content;</th></tr>
+                <tr><th>    height: max-content;</th></tr>
+                <tr><th>    padding:5px;</th></tr>
+                <tr><th>    display: block;</th></tr>
+                <tr><th>    margin-top:10px;</th></tr>
+                <tr><th>    margin-bottom:8px;</th></tr>
+                <tr><th>    padding-left: 15px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .popup {</th></tr>
+                <tr><th>    border: none !important;</th></tr>
+                <tr><th>    border-radius: .3rem !important;</th></tr>
+                <tr><th>    background-color: #fff !important;</th></tr>
+                <tr><th>    background-clip: padding-box !important;</th></tr>
+                <tr><th>    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, .2);</th></tr>
+                <tr><th>    text-shadow: none;</th></tr>
+                <tr><th>    padding: 10px !important;</th></tr>
+                <tr><th>    animation: fade 0.2s ease;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .main-container > .header-layout > .header nav a[href^="/space/show"]+div.center, .main-container > .header-layout .user-nav a[href^="/space/show"]+div.center {</th></tr>
+                <tr><th>    border: none !important;</th></tr>
+                <tr><th>    border-radius: .3rem !important;</th></tr>
+                <tr><th>    background-color: #fff !important;</th></tr>
+                <tr><th>    background-clip: padding-box !important;</th></tr>
+                <tr><th>    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, .2);</th></tr>
+                <tr><th>    text-shadow: none;</th></tr>
+                <tr><th>    padding: 10px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.main-container > .header-layout > .header nav a[href^="/space/show"]+div.center > .header, .main-container > .header-layout > .header nav a[href^="/space/show"]+div.center > footer, .main-container > .header-layout .user-nav a[href^="/space/show"]+div.center > .header-layout, .main-container > .header-layout .user-nav a[href^="/space/show"]+div.center > footer {</th></tr>
+                <tr><th>    border: none;</th></tr>
+                <tr><th>    background: transparent;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.main-container > .header-layout > .header nav a[href^="/space/show"]+div.center, .main-container > .header-layout .user-nav a[href^="/space/show"]+div.center {</th></tr>
+                <tr><th>    display:block !important;</th></tr>
+                <tr><th>    transform: translate(0, 0px) perspective(0px) rotateX(0deg);</th></tr>
+                <tr><th>    opacity:1;</th></tr>
+                <tr><th>    transition: all .25s ease;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.main-container > .header-layout > .header nav a[href^="/space/show"]+div.center[style*="none"], .main-container > .header-layout .user-nav a[href^="/space/show"]+div.center[style*="none"] {</th></tr>
+                <tr><th>    pointer-events:none;</th></tr>
+                <tr><th>    opacity:0;</th></tr>
+                <tr><th>    transform: translate(0, 10px) perspective(80px) rotateX(-2deg);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .am-slider-default .am-control-nav li a {</th></tr>
+                <tr><th>    box-shadow: none;</th></tr>
+                <tr><th>    transition: all 0.5s ease;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-slider-default .am-control-nav li a.am-active {</th></tr>
+                <tr><th>    width: 15px;</th></tr>
+                <tr><th>    background-color: #5e72e4;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-message-contact:hover {</th></tr>
+                <tr><th>    background:rgba(200, 200, 200, 0.2);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-message-contact *:not(.am-badge):hover {</th></tr>
+                <tr><th>    background:transparent;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-selected-list li:hover {</th></tr>
+                <tr><th>    background:rgba(200, 200, 200, 0.2) !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .lg-index-benben div:nth-of-type(4) {</th></tr>
+                <tr><th>    background: transparent !important;</th></tr>
+                <tr><th>    box-shadow: none !important;</th></tr>
+                <tr><th>    padding-left: 0;</th></tr>
+                <tr><th>    padding-right: 0;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-index-benben div:nth-of-type(4) #home-center-nav {</th></tr>
+                <tr><th>    background: transparent;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> #replyarea {</th></tr>
+                <tr><th>    opacity:1 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> .card hr {</th></tr>
+                <tr><th>    margin: .8em 0;</th></tr>
+                <tr><th>    height: .5px;</th></tr>
+                <tr><th>    background: rgba(0, 0, 0, 0.08);</th></tr>
+                <tr><th>    border: none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th> #app > .main-container > .header-layout.tiny {</th></tr>
+                <tr><th>    height: 4em !important;</th></tr>
+                <tr><th>    background: #fff !important;</th></tr>
+                <tr><th>    color: #333 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.header-layout.tiny ~ main.lfe-body {</th></tr>
+                <tr><th>    margin-top: 0px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.lg-index-content div:not(.am-comment-bd) {</th></tr>
+                <tr><th>    border-radius: 20px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>a:not(.lg-fg-purple, .lg-fg-red, .lg-fg-orange, .lg-fg-green, .lg-fg-bluelight, .am-btn):hover {</th></tr>
+                <tr><th>    color: #0056B3 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.am-active a:hover {</th></tr>
+                <tr><th>    color: #fff !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-comment {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.am-comment-hd, .am-comment-meta {</th></tr>
+                <tr><th>    border-radius: 10px 10px 0px 0px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.am-comment-bd {</th></tr>
+                <tr><th>    border-radius: 0px 0px 10px 10px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.am-comment-main {</th></tr>
+                <tr><th>    padding: 1px;</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>section:not(.side, .main, .lg-summary) {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    margin: 10px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.card {</th></tr>
+                <tr><th>    border-radius: 20px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.lg-summary, .lg-content-table-left {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    padding: 20px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>textarea, input {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>input[type="text"] .frame {</th></tr>
+                <tr><th>    width: 0px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.frame {</th></tr>
+                <tr><th>    border: none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.search-box {</th></tr>
+                <tr><th>    width: 200px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.am-btn:hover {</th></tr>
+                <tr><th>    color: #fff !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.lg-article {</th></tr>
+                <tr><th>    border-radius: 20px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.popup a, .popup a:hover {</th></tr>
+                <tr><th>    border-radius: 5px !important;</th></tr>
+                <tr><th>    color: #000 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.popup {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    z-index: 100 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.am-prev {</th></tr>
+                <tr><th>    z-index: 1 !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.items .selected {</th></tr>
+                <tr><th>    background-color: #5E72E4 !important;</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    padding: 3px 10px 3px 10px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.items .selected, .items .selected a:hover {</th></tr>
+                <tr><th>    color: #fff !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.items li {</th></tr>
+                <tr><th>    margin: 0px 5px 10px 10px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.items .entry::before {</th></tr>
+                <tr><th>    content: none !important;</th></tr>
+                <tr><th>    border: none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.tags span {</th></tr>
+                <tr><th>    background-color: #5E72E4 !important;</th></tr>
+                <tr><th>    color: #fff;</th></tr>
+                <tr><th>    border: none !important;</th></tr>
+                <tr><th>    border-radius: 5px;</th></tr>
+                <tr><th>    padding: 5px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.menu {</th></tr>
+                <tr><th>    padding: 10px 10px 0px 10px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.float-bottom {</th></tr>
+                <tr><th>    border-radius: 10px 10px 0px 0px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.bottom-inner .page-bar button {</th></tr>
+                <tr><th>    border-radius: 100%;</th></tr>
+                <tr><th>    width: 35px !important;</th></tr>
+                <tr><th>    height: 35px !important;</th></tr>
+                <tr><th>    transition: 0.2s;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.bottom-inner .page-bar button .number {</th></tr>
+                <tr><th>    float: none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.bottom-inner .page-bar button:hover {</th></tr>
+                <tr><th>    background-color: #5E72E4 !important;</th></tr>
+                <tr><th>    color: #fff !important;</th></tr>
+                <tr><th>    border: none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.page-bar .selected {</th></tr>
+                <tr><th>    background-color: #5E72E4 !important;</th></tr>
+                <tr><th>    border: none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.operations {</th></tr>
+                <tr><th>    border-radius: 10px 10px 0px 0px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.operations.float {</th></tr>
+                <tr><th>    border: none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.side .item {</th></tr>
+                <tr><th>    transition: 0.2s;</th></tr>
+                <tr><th>    border-radius: 10px;</th></tr>
+                <tr><th>    border: none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.side .panel-content {</th></tr>
+                <tr><th>    padding: 10px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.message::after {</th></tr>
+                <tr><th>    content: none !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.message-block .message {</th></tr>
+                <tr><th>    padding: 5px 10px 5px 10px !important;</th></tr>
+                <tr><th>    background-color: #eee !important;</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.right .message {</th></tr>
+                <tr><th>    background-color: #5E72E4 !important;</th></tr>
+                <tr><th>    color: #fff;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.message-block img {</th></tr>
+                <tr><th>    height: 35px !important;</th></tr>
+                <tr><th>    width: 35px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.container .dropdown .center {</th></tr>
+                <tr><th>    border: none !important;</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    padding: 8px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.container .dropdown .center .header {</th></tr>
+                <tr><th>    margin-bottom: -10px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.container .dropdown .center .ops a {</th></tr>
+                <tr><th>    margin-top: 10px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.status-link .tag {</th></tr>
+                <tr><th>    border-radius: 8px !important;</th></tr>
+                <tr><th>    margin: 0px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.dropdown {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    padding: 10px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>.dropdown li {</th></tr>
+                <tr><th>    transition: 0.2s;</th></tr>
+                <tr><th>    border-radius: 5px !important;</th></tr>
+                <tr><th>    padding: 10px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.inner-card {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    padding: 10px 20px 10px 20px !important;</th></tr>
+                <tr><th>    background-color: #fcfcfc !important;</th></tr>
+                <tr><th>    border: none !important;</th></tr>
+                <tr><th>    margin: 1px;</th></tr>
+                <tr><th>    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);</th></tr>
+                <tr><th>    transition: 0.2s;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.inner-card:hover {</th></tr>
+                <tr><th>    box-shadow: 0 10px 30px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.tag {</th></tr>
+                <tr><th>    border-radius: 5px !important;</th></tr>
+                <tr><th>    padding: 2px 8px 2px 8px !important;</th></tr>
+                <tr><th>    margin-left: 10px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.user-header-top {</th></tr>
+                <tr><th>    margin-top: -23px;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>#app .lfe-body:not(.main-container .lfe-body) {</th></tr>
+                <tr><th>    height: 420px;</th></tr>
+                <tr><th>    border-radius: 10px 0px 10px 0px !important;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th></th></tr>
+                <tr><th>/* 透明化开始 */</th></tr>
+                <tr><th></th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-article , .lg-summary , .lg-article-sub , .lg-content-table-left , .card</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: rgba(252,252,252,0.9) !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  blockquote</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: rgba(252,252,252,0.95) !important;</th></tr>
+                <tr><th>    border-radius: 12px !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th>  .am-comment-main</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: rgba(255,255,255,0.9) !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th>  .solution-article > .operations.float</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    opacity: 0.95;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th>  .expand</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: rgba(255,255,255,0) !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .expand > .color-default</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: rgba(255,255,255,0.9) !important;</th></tr>
+                <tr><th>    border-radius: 5px 5px 5px 5px;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th>  .tiny > .background</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: transparent !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th>  .tiny</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    z-index: 10 !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .user-nav</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    z-index: 10 !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th></th></tr>
+                <tr><th>/* 透明化结束 */</th></tr>
+                <tr><th></th></tr>
+                <tr><th></th></tr>
+                <tr><th></th></tr>
+                <tr><th></th></tr>
+                <tr><th></th></tr>
+                <tr><th></th></tr>
+                <tr><th></th></tr>
+                <tr><th>  body</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background-image: url(https://w.wallhaven.cc/full/dp/wallhaven-dpo38l.jpg);</th></tr>
+                <tr><th>    background-repeat: no-repeat;</th></tr>
+                <tr><th>    background-size: cover;</th></tr>
+                <tr><th>    background-position: center;</th></tr>
+                <tr><th>    background-attachment: fixed;</th></tr>
+                <tr><th>   }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>/* -------------------------------- 圆角化 --------------------------------- */</th></tr>
+                <tr><th>  #app-sidenav</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: none;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  a[data-v-3e5191a6]:hover</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 10px 10px 10px 10px;</th></tr>
+                <tr><th>    color: #3498db;</th></tr>
+                <tr><th>    background: #fff;</th></tr>
+                <tr><th>    box-shadow: 2px 2px 2px #5e5e5e;</th></tr>
+                <tr><th>    transition: color 1s,background 0.45s,box-shadow 0.45s;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  a[data-v-3e5191a6]</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: none;</th></tr>
+                <tr><th>    color: #fff0;</th></tr>
+                <tr><th>    color: #fff;</th></tr>
+                <tr><th>    background: #3498db;</th></tr>
+                <tr><th>    box-shadow: 2px 2px 2px #5e5e5e;</th></tr>
+                <tr><th>    border-radius: 10px 10px 10px 10px;</th></tr>
+                <tr><th>    margin: 0px 4px 4px 0px;</th></tr>
+                <tr><th>    filter: none !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  i[data-v-7e88b118]</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    color: #fff0;</th></tr>
+                <tr><th>    color: #0e90d2;</th></tr>
+                <tr><th>    width: 4em;</th></tr>
+                <tr><th>    height: 3.8em;</th></tr>
+                <tr><th>    padding: 1.2em 0em 0em 0em;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  div[data-v-7e88b118]</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background-color: #fff0 !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  i[data-v-7e88b118]:hover</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    color: #0e90d2;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  a[data-v-7e88b118]</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    filter: invert(70%);</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .popup-button</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    height: 4em;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .content</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #5e5e5e;</th></tr>
+                <tr><th>    height: 4em !important;</th></tr>
+                <tr><th>    background: #fff;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .bread-crumb[data-v-3c5eed85]</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    padding-top: 0;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .width-wrap>h1</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    margin: 0;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-content</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>   /*background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  */</th></tr>
+                <tr><th>   /*background: linear-gradient(to right, #D6A4A4, #DAE2F8) !important;*/</th></tr>
+                <tr><th>    margin: 0px 0px 0px 0px;</th></tr>
+                <tr><th>    padding: 0px 0px 0px 65px;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-article</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 15px 15px 15px 15px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #5e5e5e;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-summary</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 15px 15px 15px 15px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #5e5e5e;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-viewport</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 5px 5px 5px 5px;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-btn</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 10px 10px;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-toolbar</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: #fff0;</th></tr>
+                <tr><th>    border: none;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-collapse</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    box-shadow: 2px 2px 2px #131212d9;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-header, .lg-header-list>li</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background-color: white;</th></tr>
+                <tr><th>    color: #131212d9 !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-header-li</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    color: #131212d9 !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-form-field</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 100px 100px 100px 100px;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-input-group-label</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 100px 100px 100px 100px;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-table-bg0</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: #fff;</th></tr>
+                <tr><th>    border-radius: 12px 12px 12px 12px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #5e5e5e;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-table-bg1</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: #fff;</th></tr>
+                <tr><th>    border-radius: 12px 12px 12px 12px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #5e5e5e;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-table-bg0 .am-progress</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    box-shadow: none;</th></tr>
+                <tr><th>    border-radius: 0;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-pagination>li</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 20px 20px 20px 20px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #5e5e5e;</th></tr>
+                <tr><th>    margin: 4px 0px 0px 4px;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-comment-main</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border: 0px solid;</th></tr>
+                <tr><th>    border-radius: 20px 20px 20px 20px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-comment-main::before</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    display: none;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-comment-main::after</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    display: none;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-comment-hd</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: transparent;</th></tr>
+                <tr><th>    border-radius: 12px 12px 12px 12px;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-comment-bd</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: transparent;</th></tr>
+                <tr><th>    border-radius: 12px 12px 12px 12px;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-panel</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border: 0px solid;</th></tr>
+                <tr><th>    border-radius: 10px 10px 10px 10px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>    opacity: 1;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-panel-bd</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    opacity: 1;</th></tr>
+                <tr><th>    background: rgba(255,255,255,1);</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-panel-primary</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    opacity: 1;</th></tr>
+                <tr><th>    background: rgba(255,255,255,1);</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-pagination>li>a</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: rgba(255,255,255,1);</th></tr>
+                <tr><th>    border-radius: 50px 50px 50px 50px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>    border: 0px solid;</th></tr>
+                <tr><th>    margin: 2px 2px 2px 2px;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-pagination>li>a:hover</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: rgba(255,255,255,1);</th></tr>
+                <tr><th>    border-radius: 50px 50px 50px 50px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>    border: 0px solid;</th></tr>
+                <tr><th>    color: red;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-pagination .am-active>a</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: rgba(255,255,255,1);</th></tr>
+                <tr><th>    border-radius: 50px 50px 50px 50px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>    color: #0e90d2;</th></tr>
+                <tr><th>    font-weight: bold;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-pagination .am-active>a:hover</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: rgba(255,255,255,1);</th></tr>
+                <tr><th>    border-radius: 50px 50px 50px 50px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>    color: red;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-content-table-left</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border: 0px solid;</th></tr>
+                <tr><th>    border-radius: 20px 20px 20px 20px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-index-contest</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: rgba(255,255,255,1);</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-sidebar-list>li</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    margin: 5px 5px 5px 5px;</th></tr>
+                <tr><th>    border-radius: 20px 20px 20px 20px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #5e5e5e;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-sidebar-list</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    box-shadow: none;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  code</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    font-family: consolas;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  pre</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    font-family: consolas;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-nav>li.am-active>a, .am-nav>li.am-active>a:focus, .am-nav>li.am-active>a:hover</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: none;</th></tr>
+                <tr><th>    font-weight: bold;</th></tr>
+                <tr><th>    color: #0e90d2;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-nav>li>a:focus, .am-nav>li>a:hover</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: none;</th></tr>
+                <tr><th>    color: red;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  #app-footer, #app-header</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    margin-left: 0em;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .width-wrap>h1</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    color: #1b1919d6;</th></tr>
+                <tr><th>    font-size: 1.5em;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  a:hover</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    color: #ff6464;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .popup[data-v-46951e14]</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border: none;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-record-tile</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 20px 20px 20px 20px;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #5e5e5e;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-record-tile>small:first-child</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    text-align: center;</th></tr>
+                <tr><th>    padding-left: 0px;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-progress</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    box-shadow: 2px 2px 2px #5e5e5e;</th></tr>
+                <tr><th>    border-radius: 100px 100px 100px 100px;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lg-left .center>img</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border: none;</th></tr>
+                <tr><th>    border-color: #fff;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lfe-form-sz-middle</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border: 0px solid;</th></tr>
+                <tr><th>    border-radius: 8px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .copy-btn</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 5px 5px 5px 5px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .button-in-anchor</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border: 0px solid;</th></tr>
+                <tr><th>    border-radius: 10px 10px 10px 10px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-form</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border: 0px solid;</th></tr>
+                <tr><th>    border-radius: 2px 2px 2px 2px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .test-case</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border: 0px solid;</th></tr>
+                <tr><th>    border-radius: 15px 15px 15px 15px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f !important;</th></tr>
+                <tr><th>    opacity: 1.0 !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .content</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    background: transparent !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f !important;</th></tr>
+                <tr><th>    height: 100% !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .card</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 15px 15px 15px 15px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .popup</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 15px 15px 15px 15px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .user-header-top</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 15px 15px 0px 0px !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .lfe-form-sz-small</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .solution-article > .operations.float</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .expand</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>    opacity: 1.0 !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .drop</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .am-form-field</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .frame</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .refined-input</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .refined-input .input-wrap .frame</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .input-wrap > input</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  .center</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 10px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  ::-webkit-scrollbar</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 5px !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  ::-webkit-scrollbar-track</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 5px !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  ::-webkit-scrollbar-thumb</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 5px !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  ::-webkit-scrollbar-thumb:hover</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 5px !important;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  code</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 5px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  pre</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 12px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  textarea</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 12px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th></th></tr>
+                <tr><th>  span</th></tr>
+                <tr><th>  {</th></tr>
+                <tr><th>    border-radius: 5px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>  }</th></tr>
+                <tr><th>/*圆角化结束*/</th></tr>
+                <tr><th>.info[data-v-3e2ae97b]:after{</th></tr>
+                <tr><th> 	content:"Scorpio-Luogu 由 百位必备 研发";   </th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.slogan[data-v-3e2ae97b]:before{</th></tr>
+                <tr><th> 	content:"飞翔";   </th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.exlg-cph.lfe-form-sz-middle{</th></tr>
+                <tr><th>	display:none;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-badge.am-radius.lg-bg-green{</th></tr>
+                <tr><th>    color:#fff;</th></tr>
+                <tr><th>    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);</th></tr>
+                <tr><th>    border-radius: 5px !important;</th></tr>
+                <tr><th>    box-shadow: 0px 0px 0px #9f9f9f;</th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-badge.am-radius.lg-bg-red{</th></tr>
+                <tr><th> 	display:none;   </th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-btn.am-btn-success.am-btn-sm{</th></tr>
+                <tr><th>    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);	   </th></tr>
+                <tr><th>}</th></tr>
+                <tr><th>.am-btn.am-btn-primary.am-btn-sm{</th></tr>
+                <tr><th>    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);</th></tr>
+                <tr><th>}</th></tr>            
+            </table>
+        </div>
+    </body>
+</html>
