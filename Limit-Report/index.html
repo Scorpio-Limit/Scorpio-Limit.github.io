@@ -2,7 +2,39 @@
 <html>
     <head>
         <title>Limit-Report</title>
+        <link rel="shortcut icon" href="P1.ico">
         <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgb(51, 51, 51);
+                position: fixed;
+                top: 0;
+                width: 100%;
+                margin-left: -7.8px;
+                padding-left: 5%;
+            }
+            li {
+             float: left;
+                font-size: large;
+                font-weight: bolder;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                transition: all .5s ease;
+            }
+            .ou {
+                background-color: #4CAF50;
+            }
+            li a:hover:not(.ou) {
+                background-color: #111;
+            }
             @keyframes show {
                 0% {
                     margin-top:-360px; 
@@ -13,7 +45,7 @@
                 }
             }
             body {
-                background-color: #8bf7e5;
+                background-color: #fff;
             }
             div {
                 text-align: center;
@@ -48,24 +80,48 @@
                 color: rgb(28, 146, 214);
                 text-decoration: none;
             }
-            a:hover {
+            a:hover:not(.ou) {
                 color: rgb(141, 63, 230);
+            }
+            img:hover {
+                animation: show2 1.5s;
+            }
+            .divone {
+                background-color: #131212;
+            }
+            .beginimg{
+                margin-top: 30px;
+                animation: imgshow 1s;
+                background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/4xzaj9d5.png);
+                background-repeat: no-repeat;
+	            background-position:center;
+                background-size: cover;
+                background-attachment:fixed;
+                height: 80vh;
+                width: 100%;
+                margin-left: -1vw;
+            }
+            h1 {
+                font-size: 60px;
+            }
+            h2 {
+                font-size: 30px;
             }
         </style>
     </head>
     <body>
+        <ul>
+            <li><a class = "ou" href = "index.html">HOME</a></li>
+            <li><a href = "index-1.html">CONTENT</a></li>
+            <li><a href = "about.html">ABOUT</a></li>
+            <li><a href = "help.html">HELP</a></li>
+        </ul>
+        <div class = "beginimg"></div>
+        <br>
         <div>
-            <h1 class = "one">Limit-Report</h1>
-            <h4>作者: 邹政皓</h4>
-            <b><h4>当前页数: 1</h4></b>
-            <a href = "index-2.html"><button>下一页</button></a>
-            <br>
-            <br>
-            <table align = "center" border = "1">
-                <tr><td>时间</td><td>通道</td></tr>
-                <tr><td>2022年7月1日</td><td><a href = "R1.html">跳转</a></td></tr>
-            </table>
-            <b><h5>如有疑问、建议或内容问题， 请通过邮箱 2966653003@qq.com 向作者提出， 谢谢配合 ！</h5></b>
+            <h1 align = "left">Hello</h1>
+            <h2 align = "left">Welcome to Limit-Report !</h2>
+            <b><h5>如有疑问、建议或内容问题， 请通过邮箱 2966653003@qq.com 向作者提出， 谢谢配合 ！</h5></b>   
         </div>
     </body>
 </html>
