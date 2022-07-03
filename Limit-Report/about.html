@@ -121,6 +121,24 @@
                 padding: 3%;
                 border-radius: 15px;
             }
+            .sh {
+                animation: showbig 1s;
+                transition: all .5s ease; 
+                background-color: #ffffff;
+                margin: 3%;
+                padding: 3%;
+                border-radius: 15px;
+            }
+            .three {
+                font-size: 50px;
+            }
+            .sh:hover {
+                transform: translateY(-10px);
+                box-shadow: 0px 4px 4px #5c5c5c;
+            }
+            .shtable {
+                background-color: rgb(228, 227, 227);
+            }
         </style>
     </head>
     <body>
@@ -133,7 +151,22 @@
         <div class = "beginimg"></div>
         <br>
         <div class = "main">
-           <h1>此页面正在维护中， 暂无内容，谢谢配合</h1> 
+            <div class = "sh">
+                <h2 class = "three">开发者: </h2>
+                <table align = "center" style = "background-color: #fff;">
+                    <tr><th><img src = "https://cdn.luogu.com.cn/upload/usericon/532992.png" style = "border-radius: 360px; width: 64px"><h2>Scorpio_Limit</h2></th></tr>
+                    <tr><th></th></tr>
+                </table>
+            </div>
+            <div class = "sh">
+                <h2 class = "three">更新日志: </h2>
+                <table class = "shtable" align = "center" border = "1">
+                    <tr><td>时间</td><td>内容</td></tr>
+                    <tr><td>2022.7.1</td><td>上市</td></tr>
+                    <tr><td>2022.7.2</td><td>修改网页无法打开的问题</td></tr>
+                    <tr><td>2022.7.3</td><td>整体修改了网页样式</td></tr>
+                </table>
+            </div>
            <b><h5>如有疑问、建议或内容问题， 请通过邮箱 2966653003@qq.com 向作者提出， 谢谢配合 ！</h5></b>
         </div>
     </body>
