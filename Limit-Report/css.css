@@ -119,12 +119,12 @@ h3 {
     animation: showbig 1s;
     transition: all .5s ease; 
     background-color: #ffffff;
-    margin: 3%;
-    padding: 3%;
+    margin: 10%;
+    padding: 4%;
     border-radius: 15px;
 }
 .three {
-    font-size: 50px;
+    font-size: 44px;
 }
 .sh:hover {
     transform: translateY(-10px);
