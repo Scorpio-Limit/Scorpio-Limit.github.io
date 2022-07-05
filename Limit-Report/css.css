@@ -76,7 +76,7 @@ tr {
 }
 td {
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
 }
 a {
@@ -95,10 +95,10 @@ img:hover {
 .beginimg{
     margin-top: 30px;
     animation: showbig 2.2s;
-    background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/4xzaj9d5.png);
+    background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/crbbaiaz.png);
     background-repeat: no-repeat;
     background-position:center;
-    background-size: cover;
+    background-size: contain;
     background-attachment:fixed;
     height: 80vh;
     width: 100%;
@@ -124,7 +124,7 @@ h3 {
     border-radius: 15px;
 }
 .three {
-    font-size: 44px;
+    font-size: 30px;
 }
 .sh:hover {
     transform: translateY(-10px);
