@@ -61,13 +61,14 @@ button {
     background-color: #c8a6f0;
     border-radius: 20px;
     box-shadow: 2px 2px 1px #3c3c3c;
+    font-size: 16px;
 }
 button:hover {
     background-color: #a15fec;
 }
 table {
     border-radius: 10px;
-    background-color:#9aecd1;
+    background-color:#e2e2e2;
     animation: show 1.2s;
     margin-top: 0px;
 }
