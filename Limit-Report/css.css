@@ -97,11 +97,11 @@ img:hover {
     animation: showbig 2.2s;
     background-image: url(https://cdn.luogu.com.cn/upload/image_hosting/crbbaiaz.png);
     background-repeat: no-repeat;
-    background-position:center;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     background-attachment:fixed;
     height: 80vh;
-    width: 100%;
+    width: 120%;
     margin-left: -1vw;
 }
 h3 {
