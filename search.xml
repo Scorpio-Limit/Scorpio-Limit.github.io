@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Codeforces-Round823(Div. 2)[A.Planets]</title>
+      <link href="/2022/09/30/Codeforces-Round823(Div.%202)%5BA.Planets%5D/"/>
+      <url>/2022/09/30/Codeforces-Round823(Div.%202)%5BA.Planets%5D/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Codeforces-Round-823-Div-2-A-Plantes-题解"><a href="#Codeforces-Round-823-Div-2-A-Plantes-题解" class="headerlink" title="Codeforces Round #823 (Div. 2) A.Plantes 题解"></a>Codeforces Round #823 (Div. 2) A.Plantes 题解</h2><h4 id="原题链接"><a href="#原题链接" class="headerlink" title="原题链接"></a><a href="https://codeforces.com/contest/1730/problem/A">原题链接</a></h4><h2 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h2><h4 id="题意大致是-在-n-条轨道里-每一条轨道上都有一些星球-即障碍物-且第-i-条轨道上共有-a-i-个障碍物"><a href="#题意大致是-在-n-条轨道里-每一条轨道上都有一些星球-即障碍物-且第-i-条轨道上共有-a-i-个障碍物" class="headerlink" title="题意大致是: 在 n 条轨道里, 每一条轨道上都有一些星球(即障碍物), 且第 i 条轨道上共有 a_i 个障碍物."></a>题意大致是: 在 n 条轨道里, 每一条轨道上都有一些星球(即障碍物), 且第 i 条轨道上共有 a_i 个障碍物.</h4><h4 id="现在有两台可以消灭障碍物的机器-A-和-B"><a href="#现在有两台可以消灭障碍物的机器-A-和-B" class="headerlink" title="现在有两台可以消灭障碍物的机器 A 和 B."></a>现在有两台可以消灭障碍物的机器 A 和 B.</h4><h4 id="机器-A-一次性只能消灭一个障碍物-而且每消灭一个障碍物-总费用就要加-1"><a href="#机器-A-一次性只能消灭一个障碍物-而且每消灭一个障碍物-总费用就要加-1" class="headerlink" title="机器 A 一次性只能消灭一个障碍物, 而且每消灭一个障碍物, 总费用就要加 1."></a>机器 A 一次性只能消灭一个障碍物, 而且每消灭一个障碍物, 总费用就要加 1.</h4><h4 id="机器-B-一次性只能消灭一条轨道上的所有消灭障碍物-而且每消灭一条轨道的所有障碍物-总费用就要加上一个固定的数-k"><a href="#机器-B-一次性只能消灭一条轨道上的所有消灭障碍物-而且每消灭一条轨道的所有障碍物-总费用就要加上一个固定的数-k" class="headerlink" title="机器 B 一次性只能消灭一条轨道上的所有消灭障碍物, 而且每消灭一条轨道的所有障碍物, 总费用就要加上一个固定的数 k."></a>机器 B 一次性只能消灭一条轨道上的所有消灭障碍物, 而且每消灭一条轨道的所有障碍物, 总费用就要加上一个固定的数 k.</h4><h4 id="求消灭掉所有的障碍物的最小费用"><a href="#求消灭掉所有的障碍物的最小费用" class="headerlink" title="求消灭掉所有的障碍物的最小费用?"></a>求消灭掉所有的障碍物的最小费用?</h4><h2 id="具体思路"><a href="#具体思路" class="headerlink" title="具体思路"></a>具体思路</h2><h4 id="根据题目意思-我们可以发现-消灭任何一条轨道上的障碍物的方法大致分为两种-没列出来的表示不重要"><a href="#根据题目意思-我们可以发现-消灭任何一条轨道上的障碍物的方法大致分为两种-没列出来的表示不重要" class="headerlink" title="根据题目意思, 我们可以发现, 消灭任何一条轨道上的障碍物的方法大致分为两种(没列出来的表示不重要):"></a>根据题目意思, 我们可以发现, 消灭任何一条轨道上的障碍物的方法大致分为两种(没列出来的表示不重要):</h4><h4 id="1-用机器-A-消灭-费用为-a-i-记为-A-i"><a href="#1-用机器-A-消灭-费用为-a-i-记为-A-i" class="headerlink" title="1. 用机器 A 消灭, 费用为 a_i, 记为 A_i."></a>1. 用机器 A 消灭, 费用为 a_i, 记为 A_i.</h4><h4 id="2-用机器-B-消灭-费用为-k-记为-B-i"><a href="#2-用机器-B-消灭-费用为-k-记为-B-i" class="headerlink" title="2. 用机器 B 消灭, 费用为 k, 记为 B_i."></a>2. 用机器 B 消灭, 费用为 k, 记为 B_i.</h4><h4 id="所以-我们在每一条轨道上的最小费用就是-min-A-i-B-i"><a href="#所以-我们在每一条轨道上的最小费用就是-min-A-i-B-i" class="headerlink" title="所以, 我们在每一条轨道上的最小费用就是 min(A_i, B_i)"></a>所以, 我们在每一条轨道上的最小费用就是 min(A_i, B_i)</h4><h4 id="所以-我们只需要把每一条轨道上的最小费用加在一起-就是总费用了"><a href="#所以-我们只需要把每一条轨道上的最小费用加在一起-就是总费用了" class="headerlink" title="所以, 我们只需要把每一条轨道上的最小费用加在一起, 就是总费用了."></a>所以, 我们只需要把每一条轨道上的最小费用加在一起, 就是总费用了.</h4><h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> int long long</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> N 110</span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-type">int</span> <span class="hljs-title">read</span><span class="hljs-params">()</span> </span>&#123;<br><span class="hljs-type">int</span> f = <span class="hljs-number">0</span>, n = <span class="hljs-number">1</span>;<br><span class="hljs-type">char</span> ch = <span class="hljs-built_in">getchar</span>();<br><span class="hljs-keyword">while</span> (!<span class="hljs-built_in">isdigit</span>(ch)) &#123;<br><span class="hljs-keyword">if</span> (ch == <span class="hljs-string">&#x27;-&#x27;</span>) n *= <span class="hljs-number">-1</span>;<br>ch = <span class="hljs-built_in">getchar</span>();<br>&#125;<br><span class="hljs-keyword">while</span> (<span class="hljs-built_in">isdigit</span>(ch)) &#123;<br>f = (f &lt;&lt; <span class="hljs-number">1</span>) + (f &lt;&lt; <span class="hljs-number">3</span>)+ ch - <span class="hljs-string">&#x27;0&#x27;</span>;<br>ch = <span class="hljs-built_in">getchar</span>();<br>&#125;<br><span class="hljs-keyword">return</span> f * n;<br>&#125;<br><span class="hljs-type">int</span> T = <span class="hljs-built_in">read</span>();<br><span class="hljs-function"><span class="hljs-type">signed</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br><span class="hljs-keyword">while</span> (T --) &#123;<br><span class="hljs-type">int</span> tot = <span class="hljs-number">0</span>, n = <span class="hljs-built_in">read</span>(), k = <span class="hljs-built_in">read</span>(), a[N], h[N] = &#123;<span class="hljs-number">0</span>&#125;;<br><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; ++ i) a[i] = <span class="hljs-built_in">read</span>(), h[a[i]] ++;<br><span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">100</span>; ++ i) &#123;<br><span class="hljs-keyword">if</span> (!h[i]) <span class="hljs-keyword">continue</span>;<br>tot += <span class="hljs-built_in">min</span>(k, h[i]);<br>&#125;<br>cout &lt;&lt; tot &lt;&lt; <span class="hljs-string">&#x27;\n&#x27;</span>;<br>&#125;<br><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure><h2 id="此题解仅供参考-若有疑问请在评论区留言-谢谢"><a href="#此题解仅供参考-若有疑问请在评论区留言-谢谢" class="headerlink" title="此题解仅供参考, 若有疑问请在评论区留言, 谢谢!"></a>此题解仅供参考, 若有疑问请在评论区留言, 谢谢!</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> Key-To-Problems </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Codeforces </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Limit-Report [3]</title>
+      <link href="/2022/09/21/Limit-Report%20%5B3%5D/"/>
+      <url>/2022/09/21/Limit-Report%20%5B3%5D/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、停课？"><a href="#一、停课？" class="headerlink" title="一、停课？"></a>一、停课？</h2><h4 id="我又又又又停课了…"><a href="#我又又又又停课了…" class="headerlink" title="我又又又又停课了…"></a>我又又又又停课了…</h4><h4 id="唉，这烦人的疫情…"><a href="#唉，这烦人的疫情…" class="headerlink" title="唉，这烦人的疫情…"></a>唉，这烦人的疫情…</h4><h4 id="今天的整个下午，我都无聊地调戏着我的-bot，嘿嘿，-好玩儿"><a href="#今天的整个下午，我都无聊地调戏着我的-bot，嘿嘿，-好玩儿" class="headerlink" title="今天的整个下午，我都无聊地调戏着我的 bot，嘿嘿， 好玩儿~"></a>今天的整个下午，我都无聊地调戏着我的 bot，嘿嘿， 好玩儿~</h4><h2 id="二、Scorpio-Limit-出新东西啦！"><a href="#二、Scorpio-Limit-出新东西啦！" class="headerlink" title="二、Scorpio_Limit 出新东西啦！"></a>二、Scorpio_Limit 出新东西啦！</h2><h4 id="我利用两天前的下午，初步制作了一个-AI-聊天机器人，-此为链接"><a href="#我利用两天前的下午，初步制作了一个-AI-聊天机器人，-此为链接" class="headerlink" title="我利用两天前的下午，初步制作了一个 AI 聊天机器人， 此为链接"></a>我利用两天前的下午，初步制作了一个 AI 聊天机器人， <a href="https://limit-robot.github.io/">此为链接</a></h4><h4 id="由于此-AI-刚刚完成初步制作，-所以回复问题比较奇怪，-请谅解，-我会在-2-周内慢慢修改…"><a href="#由于此-AI-刚刚完成初步制作，-所以回复问题比较奇怪，-请谅解，-我会在-2-周内慢慢修改…" class="headerlink" title="由于此 AI 刚刚完成初步制作， 所以回复问题比较奇怪， 请谅解， 我会在 2 周内慢慢修改…"></a>由于此 AI 刚刚完成初步制作， 所以回复问题比较奇怪， 请谅解， 我会在 2 周内慢慢修改…</h4><h2 id="三、獬豸风云在哪里？"><a href="#三、獬豸风云在哪里？" class="headerlink" title="三、獬豸风云在哪里？"></a>三、獬豸风云在哪里？</h2><h4 id="我问一问哈，詹先生，-请问《獬豸风云》在哪里？"><a href="#我问一问哈，詹先生，-请问《獬豸风云》在哪里？" class="headerlink" title="我问一问哈，詹先生， 请问《獬豸风云》在哪里？"></a>我问一问哈，詹先生， 请问《獬豸风云》在哪里？</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> Limit-Report </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Report </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>为 CSP2022 的文外考生加油</title>
+      <link href="/2022/09/17/%E8%80%83%E5%89%8D%E5%8A%A0%E6%B2%B9/"/>
+      <url>/2022/09/17/%E8%80%83%E5%89%8D%E5%8A%A0%E6%B2%B9/</url>
+      
+        <content type="html"><![CDATA[<h4 id="明天就是-CSP2022-的初赛了，-虽然我不能参加（因为疫情）"><a href="#明天就是-CSP2022-的初赛了，-虽然我不能参加（因为疫情）" class="headerlink" title="明天就是 CSP2022 的初赛了， 虽然我不能参加（因为疫情）"></a>明天就是 CSP2022 的初赛了， 虽然我不能参加（因为疫情）</h4><h4 id="但是，-我在此祝福参加-CSP2022-的文外考生："><a href="#但是，-我在此祝福参加-CSP2022-的文外考生：" class="headerlink" title="但是， 我在此祝福参加 CSP2022 的文外考生："></a>但是， 我在此祝福参加 CSP2022 的文外考生：</h4><h4 id="祝你们入门、提高的初赛都通过，-在后来的复赛中取得一等奖，-加油-！-！-！"><a href="#祝你们入门、提高的初赛都通过，-在后来的复赛中取得一等奖，-加油-！-！-！" class="headerlink" title="祝你们入门、提高的初赛都通过， 在后来的复赛中取得一等奖， 加油 ！ ！ ！"></a>祝你们入门、提高的初赛都通过， 在后来的复赛中取得一等奖， 加油 ！ ！ ！</h4><h4 id="CSP-加油-！！！-文外加油-！！！"><a href="#CSP-加油-！！！-文外加油-！！！" class="headerlink" title="CSP 加油 ！！！ 文外加油 ！！！"></a>CSP 加油 ！！！ 文外加油 ！！！</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> CSP </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Report </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Limit-Report [2]</title>
+      <link href="/2022/09/08/Limit-Report%20%5B2%5D/"/>
+      <url>/2022/09/08/Limit-Report%20%5B2%5D/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、网课"><a href="#一、网课" class="headerlink" title="一、网课"></a>一、网课</h2><h4 id="唉，因为疫情，-回家了，-再家里上网课。。。"><a href="#唉，因为疫情，-回家了，-再家里上网课。。。" class="headerlink" title="唉，因为疫情， 回家了， 再家里上网课。。。"></a>唉，因为疫情， 回家了， 再家里上网课。。。</h4><h4 id="不过，-网课还是蛮有意思滴，-哈哈哈哈"><a href="#不过，-网课还是蛮有意思滴，-哈哈哈哈" class="headerlink" title="不过， 网课还是蛮有意思滴， 哈哈哈哈"></a>不过， 网课还是蛮有意思滴， 哈哈哈哈</h4><h4 id="听着网课，-还可以看着咱们班的吴中荣热舞（生物课-and-语文课）"><a href="#听着网课，-还可以看着咱们班的吴中荣热舞（生物课-and-语文课）" class="headerlink" title="听着网课， 还可以看着咱们班的吴中荣热舞（生物课 and 语文课）"></a>听着网课， 还可以看着咱们班的吴中荣热舞（生物课 and 语文课）</h4><h2 id="二、封小区"><a href="#二、封小区" class="headerlink" title="二、封小区"></a>二、封小区</h2><h4 id="由于疫情变得更加严重了，-就连这中国内陆地区最安全的地方如今也不再安全了"><a href="#由于疫情变得更加严重了，-就连这中国内陆地区最安全的地方如今也不再安全了" class="headerlink" title="由于疫情变得更加严重了， 就连这中国内陆地区最安全的地方如今也不再安全了"></a>由于疫情变得更加严重了， 就连这中国内陆地区最安全的地方如今也不再安全了</h4><h4 id="每日一次核酸，-每次核酸邻居都要和志愿者吵一架，-每天听着线上网课，-每天在家里呆着，-每天……"><a href="#每日一次核酸，-每次核酸邻居都要和志愿者吵一架，-每天听着线上网课，-每天在家里呆着，-每天……" class="headerlink" title="每日一次核酸， 每次核酸邻居都要和志愿者吵一架， 每天听着线上网课， 每天在家里呆着， 每天……"></a>每日一次核酸， 每次核酸邻居都要和志愿者吵一架， 每天听着线上网课， 每天在家里呆着， 每天……</h4><h2 id="三、My-Hope"><a href="#三、My-Hope" class="headerlink" title="三、My Hope"></a>三、My Hope</h2><h4 id="自-2019-年疫情爆发以来，-已经过去了将近-4-年了"><a href="#自-2019-年疫情爆发以来，-已经过去了将近-4-年了" class="headerlink" title="自 2019 年疫情爆发以来， 已经过去了将近 4 年了"></a>自 2019 年疫情爆发以来， 已经过去了将近 4 年了</h4><h4 id="希望疫情早日过去，-希望大雾散去，-希望太阳早日升起，-希望雷雨快快到来，-希望……"><a href="#希望疫情早日过去，-希望大雾散去，-希望太阳早日升起，-希望雷雨快快到来，-希望……" class="headerlink" title="希望疫情早日过去， 希望大雾散去， 希望太阳早日升起， 希望雷雨快快到来， 希望……"></a>希望疫情早日过去， 希望大雾散去， 希望太阳早日升起， 希望雷雨快快到来， 希望……</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> Limit-Report </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Report </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Limit-Report [1]</title>
+      <link href="/2022/08/30/Limit-Report%20%5B1%5D/"/>
+      <url>/2022/08/30/Limit-Report%20%5B1%5D/</url>
+      
+        <content type="html"><![CDATA[<h4 id="Hello，-我是-Limit-Blog-的作者-Scorpio-Limit"><a href="#Hello，-我是-Limit-Blog-的作者-Scorpio-Limit" class="headerlink" title="Hello， 我是 Limit-Blog 的作者 Scorpio_Limit"></a>Hello， 我是 Limit-Blog 的作者 Scorpio_Limit</h4><h4 id="在-2022-08-30-这天，-我终于建造好了我的博客，-真不容易啊！"><a href="#在-2022-08-30-这天，-我终于建造好了我的博客，-真不容易啊！" class="headerlink" title="在 2022-08-30 这天， 我终于建造好了我的博客， 真不容易啊！"></a>在 2022-08-30 这天， 我终于建造好了我的博客， 真不容易啊！</h4><h4 id="而就在一天后，-也就是-9-1-这天，-我就开学了（不开森，-不情愿）"><a href="#而就在一天后，-也就是-9-1-这天，-我就开学了（不开森，-不情愿）" class="headerlink" title="而就在一天后， 也就是 9.1 这天， 我就开学了（不开森， 不情愿）"></a>而就在一天后， 也就是 9.1 这天， 我就开学了（不开森， 不情愿）</h4><h4 id="以后，-我将会把-Limit-Report-和-Limit-Text-等等有关-Limit-Blog-的内容全部写在这个博客里，-欢迎来看我的博客！"><a href="#以后，-我将会把-Limit-Report-和-Limit-Text-等等有关-Limit-Blog-的内容全部写在这个博客里，-欢迎来看我的博客！" class="headerlink" title="以后， 我将会把 Limit-Report 和 Limit-Text 等等有关 Limit-Blog 的内容全部写在这个博客里， 欢迎来看我的博客！"></a>以后， 我将会把 Limit-Report 和 Limit-Text 等等有关 Limit-Blog 的内容全部写在这个博客里， 欢迎来看我的博客！</h4><h4 id="如对-Limit-Blog-有疑问、建议等问题，-请通过邮箱-2966653003-qq-com-反馈给我，-谢谢！"><a href="#如对-Limit-Blog-有疑问、建议等问题，-请通过邮箱-2966653003-qq-com-反馈给我，-谢谢！" class="headerlink" title="如对 Limit-Blog 有疑问、建议等问题， 请通过邮箱 2966653003@qq.com 反馈给我， 谢谢！"></a>如对 Limit-Blog 有疑问、建议等问题， 请通过邮箱 <a href="">2966653003@qq.com</a> 反馈给我， 谢谢！</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> Limit-Report </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Report </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Welcome to Limit-Blog</title>
+      <link href="/2022/08/30/welcome/"/>
+      <url>/2022/08/30/welcome/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Welcome-to-Limit-Blog"><a href="#Welcome-to-Limit-Blog" class="headerlink" title="Welcome to Limit-Blog!"></a>Welcome to <a href="https://www.scorpio532992.ltd/">Limit-Blog</a>!</h2><h3 id="Limit-Bolg"><a href="#Limit-Bolg" class="headerlink" title="Limit-Bolg"></a>Limit-Bolg</h3><p> 建立时间: 2022年08月30日<br> 建立人员: Scorpio_Limit</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Limit-Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Welcome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Limit-Blog [About]</title>
+      <link href="/2022/08/30/about/"/>
+      <url>/2022/08/30/about/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Limit-Blog-的建立"><a href="#Limit-Blog-的建立" class="headerlink" title="Limit-Blog 的建立"></a>Limit-Blog 的建立</h2><h4 id="开发者：Scorpio-Limit"><a href="#开发者：Scorpio-Limit" class="headerlink" title="开发者：Scorpio_Limit"></a>开发者：<a href="https://www.luogu.com.cn/user/532992">Scorpio_Limit</a></h4><h4 id="成立时间：2022年8月30日"><a href="#成立时间：2022年8月30日" class="headerlink" title="成立时间：2022年8月30日"></a>成立时间：2022年8月30日</h4><h2 id="Limit-Blog-内容概述"><a href="#Limit-Blog-内容概述" class="headerlink" title="Limit-Blog 内容概述"></a>Limit-Blog 内容概述</h2><h4 id="本站将记录一些-Scorpio-Limit-所创作编写的文章以及一些活动"><a href="#本站将记录一些-Scorpio-Limit-所创作编写的文章以及一些活动" class="headerlink" title="本站将记录一些 Scorpio_Limit 所创作编写的文章以及一些活动"></a>本站将记录一些 Scorpio_Limit 所创作编写的文章以及一些活动</h4><h2 id="Limit-Blog-功能介绍"><a href="#Limit-Blog-功能介绍" class="headerlink" title="Limit-Blog 功能介绍"></a>Limit-Blog 功能介绍</h2><h4 id="Limit-Blog-的每个栏目均在网页上方，-点击顶栏左边的-“Limit-Blog”-将返回-Limit-Blog-的主页面"><a href="#Limit-Blog-的每个栏目均在网页上方，-点击顶栏左边的-“Limit-Blog”-将返回-Limit-Blog-的主页面" class="headerlink" title="Limit-Blog 的每个栏目均在网页上方， 点击顶栏左边的 “Limit-Blog” 将返回 Limit-Blog 的主页面"></a>Limit-Blog 的每个栏目均在网页上方， 点击顶栏左边的 “Limit-Blog” 将返回 <a href="https://www.scorpio532992.ltd/">Limit-Blog 的主页面</a></h4><h4 id="Limit-Blog-的每篇文章均开启评论功能（请合理评论，-不合规的评论将会被-Scorpio-Limit-删除）；同时，-未经过-Scorpio-Limit-同意，-禁止转载任何一篇文章"><a href="#Limit-Blog-的每篇文章均开启评论功能（请合理评论，-不合规的评论将会被-Scorpio-Limit-删除）；同时，-未经过-Scorpio-Limit-同意，-禁止转载任何一篇文章" class="headerlink" title="Limit-Blog 的每篇文章均开启评论功能（请合理评论， 不合规的评论将会被 Scorpio_Limit 删除）；同时， 未经过 Scorpio_Limit 同意， 禁止转载任何一篇文章"></a>Limit-Blog 的每篇文章均开启评论功能（请合理评论， 不合规的评论将会被 Scorpio_Limit 删除）；同时， 未经过 Scorpio_Limit 同意， 禁止转载任何一篇文章</h4><h2 id="Limit-Blog-问题反馈"><a href="#Limit-Blog-问题反馈" class="headerlink" title="Limit-Blog 问题反馈"></a>Limit-Blog 问题反馈</h2><h4 id="若对-Limit-Blog-有疑问、建议等问题，-请通过邮箱-2966653003-qq-com-向-Scorpio-Limit-反馈，-谢谢配合"><a href="#若对-Limit-Blog-有疑问、建议等问题，-请通过邮箱-2966653003-qq-com-向-Scorpio-Limit-反馈，-谢谢配合" class="headerlink" title="若对 Limit-Blog 有疑问、建议等问题， 请通过邮箱 2966653003@qq.com 向 Scorpio_Limit 反馈， 谢谢配合"></a>若对 Limit-Blog 有疑问、建议等问题， 请通过邮箱 <a href="">2966653003@qq.com</a> 向 Scorpio_Limit 反馈， 谢谢配合</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> Limit-Blog </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Welcome </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
