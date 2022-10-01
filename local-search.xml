@@ -204,17 +204,6 @@
   
   
   <entry>
-    <title>archives</title>
-    <link href="/"/>
-    <url>/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>文章分类</title>
     <link href="/"/>
     <url>/</url>
@@ -237,6 +226,17 @@
   
   
   <entry>
+    <title>archives</title>
+    <link href="/"/>
+    <url>/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title></title>
     <link href="/"/>
     <url>/</url>
@@ -248,7 +248,7 @@
   
   
   <entry>
-    <title>search</title>
+    <title>tag</title>
     <link href="/"/>
     <url>/</url>
     
@@ -259,7 +259,7 @@
   
   
   <entry>
-    <title>tag</title>
+    <title>search</title>
     <link href="/"/>
     <url>/</url>
     
