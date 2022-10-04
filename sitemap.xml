@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.scorpio532992.ltd/2022/10/03/Limit-Report[5]/</loc>
-    
-    <lastmod>2022-10-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.scorpio532992.ltd/2022/09/30/Codeforces-Round823(Div.%202)[A.Planets]/</loc>
     
     <lastmod>2022-10-02</lastmod>
@@ -155,14 +146,14 @@
 
   
   <url>
-    <loc>https://www.scorpio532992.ltd/tags/Report/</loc>
+    <loc>https://www.scorpio532992.ltd/tags/Codeforces/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.scorpio532992.ltd/tags/Codeforces/</loc>
+    <loc>https://www.scorpio532992.ltd/tags/Report/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -178,14 +169,14 @@
 
   
   <url>
-    <loc>https://www.scorpio532992.ltd/categories/Limit-Report/</loc>
+    <loc>https://www.scorpio532992.ltd/categories/Problem-Explanation/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.scorpio532992.ltd/categories/Problem-Explanation/</loc>
+    <loc>https://www.scorpio532992.ltd/categories/Limit-Report/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
