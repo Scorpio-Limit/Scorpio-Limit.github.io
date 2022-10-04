@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.scorpio532992.ltd/2022/10/03/Limit-Report[5]/</loc>
+    
+    <lastmod>2022-10-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.scorpio532992.ltd/2022/09/30/Codeforces-Round823(Div.%202)[A.Planets]/</loc>
     
     <lastmod>2022-10-02</lastmod>
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://www.scorpio532992.ltd/2022/10/01/Limit-Report%20[4]/</loc>
+    <loc>https://www.scorpio532992.ltd/2022/10/01/Limit-Report[4]/</loc>
     
     <lastmod>2022-10-01</lastmod>
     
@@ -38,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://www.scorpio532992.ltd/2022/09/21/Limit-Report%20[3]/</loc>
+    <loc>https://www.scorpio532992.ltd/2022/09/21/Limit-Report[3]/</loc>
     
     <lastmod>2022-09-21</lastmod>
     
@@ -56,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://www.scorpio532992.ltd/2022/09/08/Limit-Report%20[2]/</loc>
+    <loc>https://www.scorpio532992.ltd/2022/09/08/Limit-Report[2]/</loc>
     
     <lastmod>2022-09-08</lastmod>
     
@@ -65,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://www.scorpio532992.ltd/2022/08/30/Limit-Report%20[1]/</loc>
+    <loc>https://www.scorpio532992.ltd/2022/08/30/Limit-Report[1]/</loc>
     
     <lastmod>2022-09-04</lastmod>
     
@@ -146,14 +155,14 @@
 
   
   <url>
-    <loc>https://www.scorpio532992.ltd/tags/Codeforces/</loc>
+    <loc>https://www.scorpio532992.ltd/tags/Report/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.scorpio532992.ltd/tags/Report/</loc>
+    <loc>https://www.scorpio532992.ltd/tags/Codeforces/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -169,14 +178,14 @@
 
   
   <url>
-    <loc>https://www.scorpio532992.ltd/categories/Problem-Explanation/</loc>
+    <loc>https://www.scorpio532992.ltd/categories/Limit-Report/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.scorpio532992.ltd/categories/Limit-Report/</loc>
+    <loc>https://www.scorpio532992.ltd/categories/Problem-Explanation/</loc>
     <lastmod>2022-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
