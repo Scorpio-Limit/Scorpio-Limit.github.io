@@ -4,7 +4,6 @@ https://www.scorpio532992.ltd/2022/10/01/Limit-Report[4]/
 https://www.scorpio532992.ltd/2022/08/30/about/
 https://www.scorpio532992.ltd/2022/08/30/welcome/
 https://www.scorpio532992.ltd/2022/09/21/Limit-Report[3]/
-https://www.scorpio532992.ltd/2022/09/17/%E8%80%83%E5%89%8D%E5%8A%A0%E6%B2%B9/
 https://www.scorpio532992.ltd/2022/09/08/Limit-Report[2]/
 https://www.scorpio532992.ltd/2022/08/30/Limit-Report[1]/
 https://www.scorpio532992.ltd/tags/index.html
@@ -21,4 +20,3 @@ https://www.scorpio532992.ltd/tags/Welcome/
 https://www.scorpio532992.ltd/categories/Problem-Explanation/
 https://www.scorpio532992.ltd/categories/Limit-Report/
 https://www.scorpio532992.ltd/categories/Limit-Blog/
-https://www.scorpio532992.ltd/categories/CSP/
