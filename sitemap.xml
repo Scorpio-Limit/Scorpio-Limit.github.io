@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.scorpio532992.ltd/2022/11/21/Limit-Report[2]/</loc>
+    
+    <lastmod>2022-11-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.scorpio532992.ltd/2022/08/30/Limit-Report[1]/</loc>
     
     <lastmod>2022-11-13</lastmod>
@@ -103,29 +112,29 @@
 
   <url>
     <loc>https://www.scorpio532992.ltd/</loc>
-    <lastmod>2022-11-13</lastmod>
+    <lastmod>2022-11-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://www.scorpio532992.ltd/tags/Report/</loc>
-    <lastmod>2022-11-13</lastmod>
+    <loc>https://www.scorpio532992.ltd/tags/Codeforces/</loc>
+    <lastmod>2022-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.scorpio532992.ltd/tags/Codeforces/</loc>
-    <lastmod>2022-11-13</lastmod>
+    <loc>https://www.scorpio532992.ltd/tags/Report/</loc>
+    <lastmod>2022-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.scorpio532992.ltd/tags/Welcome/</loc>
-    <lastmod>2022-11-13</lastmod>
+    <lastmod>2022-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -133,22 +142,22 @@
 
   
   <url>
-    <loc>https://www.scorpio532992.ltd/categories/Limit-Report/</loc>
-    <lastmod>2022-11-13</lastmod>
+    <loc>https://www.scorpio532992.ltd/categories/Problem-Explanation/</loc>
+    <lastmod>2022-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.scorpio532992.ltd/categories/Problem-Explanation/</loc>
-    <lastmod>2022-11-13</lastmod>
+    <loc>https://www.scorpio532992.ltd/categories/Limit-Report/</loc>
+    <lastmod>2022-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.scorpio532992.ltd/categories/Limit-Blog/</loc>
-    <lastmod>2022-11-13</lastmod>
+    <lastmod>2022-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
