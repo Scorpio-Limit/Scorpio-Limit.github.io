@@ -1,0 +1,751 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.luogu.com.cn/upload/image_hosting/3i5iq0yk.png">
+  <link rel="icon" href="https://cdn.luogu.com.cn/upload/image_hosting/3i5iq0yk.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Scorpio_Limit">
+  <meta name="keywords" content="Limit-Blog">
+  
+    <meta name="description" content="提示：本文章将讲解 《2018年刑侦科推理试题》 的解题过程  [《2018年刑侦科推理试题》题目下载通道]()首先看看题就知道这 10 道题目之间相互有线索关联着。第一轮查找线索：（找出题面话语背后的意思）第1题：找不到有用的线索，答案应该是根据其它题目确定的；第2题：说答案是第5题的答案，但是答案的排列完全不同（A.C B.D C.A D.B），所以得出线索是第2题答案 ≠ 第5题的答案；第3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Limit-Report [4]">
+<meta property="og:url" content="https://www.scorpio532992.ltd/2023/01/26/Limit-Report[4]/index.html">
+<meta property="og:site_name" content="Limit-Blog">
+<meta property="og:description" content="提示：本文章将讲解 《2018年刑侦科推理试题》 的解题过程  [《2018年刑侦科推理试题》题目下载通道]()首先看看题就知道这 10 道题目之间相互有线索关联着。第一轮查找线索：（找出题面话语背后的意思）第1题：找不到有用的线索，答案应该是根据其它题目确定的；第2题：说答案是第5题的答案，但是答案的排列完全不同（A.C B.D C.A D.B），所以得出线索是第2题答案 ≠ 第5题的答案；第3">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/omv6hzw2.png">
+<meta property="article:published_time" content="2023-01-26T06:20:13.000Z">
+<meta property="article:modified_time" content="2023-01-26T06:37:41.147Z">
+<meta property="article:author" content="Scorpio_Limit">
+<meta property="article:tag" content="Report">
+<meta property="article:tag" content="讲解">
+<meta property="article:tag" content="逻辑推理">
+<meta property="article:tag" content="刑侦科">
+<meta property="article:tag" content="2018年刑侦科推理试题">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/image_hosting/omv6hzw2.png">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>Limit-Report [4] - Limit-Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"www.scorpio532992.ltd","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"qvD9maBqfWNMxVTIDPxiRodC-gzGzoHsz","app_key":"tN1W6cQQwVgPQS28RLwo7euR","server_url":null,"path":"window.location.pathname","ignore_local":true}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="Limit-Blog" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Limit-Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/paper.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Limit-Report [4]"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        Scorpio_Limit
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-01-26 14:20" pubdate>
+          2023年1月26日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.4k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          21 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Limit-Report [4]</h1>
+            
+              <p class="note note-info">
+                
+                  
+                    本文最后更新于：2023年1月26日 下午
+                  
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="提示：本文章将讲解-《2018年刑侦科推理试题》-的解题过程"><a href="#提示：本文章将讲解-《2018年刑侦科推理试题》-的解题过程" class="headerlink" title="提示：本文章将讲解 《2018年刑侦科推理试题》 的解题过程"></a>提示：本文章将讲解 《2018年刑侦科推理试题》 的解题过程</h3><img src = "https://pic.imgdb.cn/item/63d21be1face21e9ef7c502f.jpg" alt = "1.1">
+
+<h3 id="《2018年刑侦科推理试题》题目下载通道"><a href="#《2018年刑侦科推理试题》题目下载通道" class="headerlink" title="[《2018年刑侦科推理试题》题目下载通道]()"></a>[《2018年刑侦科推理试题》题目下载通道](<a target="_blank" rel="noopener" href="https://my.scorpio532992.ltd/thing/2018年刑侦科推理试题.docx" download="2018年刑侦科推理试题.docx"></a>)</h3><h3 id="首先看看题就知道这-10-道题目之间相互有线索关联着。"><a href="#首先看看题就知道这-10-道题目之间相互有线索关联着。" class="headerlink" title="首先看看题就知道这 10 道题目之间相互有线索关联着。"></a>首先看看题就知道这 10 道题目之间相互有线索关联着。</h3><h3 id="第一轮查找线索：（找出题面话语背后的意思）"><a href="#第一轮查找线索：（找出题面话语背后的意思）" class="headerlink" title="第一轮查找线索：（找出题面话语背后的意思）"></a>第一轮查找线索：（找出题面话语背后的意思）</h3><h4 id="第1题：找不到有用的线索，答案应该是根据其它题目确定的；"><a href="#第1题：找不到有用的线索，答案应该是根据其它题目确定的；" class="headerlink" title="第1题：找不到有用的线索，答案应该是根据其它题目确定的；"></a>第1题：找不到有用的线索，答案应该是根据其它题目确定的；</h4><h4 id="第2题：说答案是第5题的答案，但是答案的排列完全不同（A-C-B-D-C-A-D-B），所以得出线索是第2题答案-≠-第5题的答案；"><a href="#第2题：说答案是第5题的答案，但是答案的排列完全不同（A-C-B-D-C-A-D-B），所以得出线索是第2题答案-≠-第5题的答案；" class="headerlink" title="第2题：说答案是第5题的答案，但是答案的排列完全不同（A.C B.D C.A D.B），所以得出线索是第2题答案 ≠ 第5题的答案；"></a>第2题：说答案是第5题的答案，但是答案的排列完全不同（A.C B.D C.A D.B），所以得出线索是第2题答案 ≠ 第5题的答案；</h4><h4 id="第3题：说有一题的答案与其他三道题目的答案不同，即只有一题的答案不同，线索是第2、3、4、6题中有3道题的答案相同；"><a href="#第3题：说有一题的答案与其他三道题目的答案不同，即只有一题的答案不同，线索是第2、3、4、6题中有3道题的答案相同；" class="headerlink" title="第3题：说有一题的答案与其他三道题目的答案不同，即只有一题的答案不同，线索是第2、3、4、6题中有3道题的答案相同；"></a>第3题：说有一题的答案与其他三道题目的答案不同，即只有一题的答案不同，线索是第2、3、4、6题中有3道题的答案相同；</h4><h4 id="第4题：说选项中有一组题的答案相同，则线索是-1-5-、-2-7-、-1-9-、-6-10-这四组中只有一组题目的答案相同；"><a href="#第4题：说选项中有一组题的答案相同，则线索是-1-5-、-2-7-、-1-9-、-6-10-这四组中只有一组题目的答案相同；" class="headerlink" title="第4题：说选项中有一组题的答案相同，则线索是 (1,5) 、(2,7)、 (1,9)、 (6,10) 这四组中只有一组题目的答案相同；"></a>第4题：说选项中有一组题的答案相同，则线索是 (1,5) 、(2,7)、 (1,9)、 (6,10) 这四组中只有一组题目的答案相同；</h4><h4 id="第5题：说选项-4-道题中有一题的答案与本题的答案相同，-线索是第4、8、7、9-题中有一题的答案-第5题的答案，其它均-≠-第5题的答案；"><a href="#第5题：说选项-4-道题中有一题的答案与本题的答案相同，-线索是第4、8、7、9-题中有一题的答案-第5题的答案，其它均-≠-第5题的答案；" class="headerlink" title="第5题：说选项 4 道题中有一题的答案与本题的答案相同， 线索是第4、8、7、9 题中有一题的答案 = 第5题的答案，其它均 ≠ 第5题的答案；"></a>第5题：说选项 4 道题中有一题的答案与本题的答案相同， 线索是第4、8、7、9 题中有一题的答案 = 第5题的答案，其它均 ≠ 第5题的答案；</h4><h4 id="第6题：说仅有两题与第8题相同，线索是第-2-4-、-1-6-、-3-10-、-5-9-题中有一组等于第8题，其它与第8题不同；"><a href="#第6题：说仅有两题与第8题相同，线索是第-2-4-、-1-6-、-3-10-、-5-9-题中有一组等于第8题，其它与第8题不同；" class="headerlink" title="第6题：说仅有两题与第8题相同，线索是第(2,4) 、(1,6) 、(3,10)、 (5,9) 题中有一组等于第8题，其它与第8题不同；"></a>第6题：说仅有两题与第8题相同，线索是第(2,4) 、(1,6) 、(3,10)、 (5,9) 题中有一组等于第8题，其它与第8题不同；</h4><h4 id="第7题：选中次数最少，次数需要统计，应该是最后才知道结果的，现在先不考虑它；"><a href="#第7题：选中次数最少，次数需要统计，应该是最后才知道结果的，现在先不考虑它；" class="headerlink" title="第7题：选中次数最少，次数需要统计，应该是最后才知道结果的，现在先不考虑它；"></a>第7题：选中次数最少，次数需要统计，应该是最后才知道结果的，现在先不考虑它；</h4><h4 id="第8题：与第一题的答案字母不相邻，线索是第-2、5、7、10-题中有3题答案与第1题答案字母相邻；"><a href="#第8题：与第一题的答案字母不相邻，线索是第-2、5、7、10-题中有3题答案与第1题答案字母相邻；" class="headerlink" title="第8题：与第一题的答案字母不相邻，线索是第 2、5、7、10 题中有3题答案与第1题答案字母相邻；"></a>第8题：与第一题的答案字母不相邻，线索是第 2、5、7、10 题中有3题答案与第1题答案字母相邻；</h4><h4 id="第9题：两条逻辑语句真假性相反，线索是第9题两句中有一句肯定是真的，另一句肯定是假的；"><a href="#第9题：两条逻辑语句真假性相反，线索是第9题两句中有一句肯定是真的，另一句肯定是假的；" class="headerlink" title="第9题：两条逻辑语句真假性相反，线索是第9题两句中有一句肯定是真的，另一句肯定是假的；"></a>第9题：两条逻辑语句真假性相反，线索是第9题两句中有一句肯定是真的，另一句肯定是假的；</h4><h4 id="第10题：出现次数差，也需要统计，应该也是最后才知道结果，前面也先不考虑它。"><a href="#第10题：出现次数差，也需要统计，应该也是最后才知道结果，前面也先不考虑它。" class="headerlink" title="第10题：出现次数差，也需要统计，应该也是最后才知道结果，前面也先不考虑它。"></a>第10题：出现次数差，也需要统计，应该也是最后才知道结果，前面也先不考虑它。</h4><h3 id="经过一轮的简单分析后，我们得到如下线索："><a href="#经过一轮的简单分析后，我们得到如下线索：" class="headerlink" title="经过一轮的简单分析后，我们得到如下线索："></a>经过一轮的简单分析后，我们得到如下线索：</h3><h4 id="线索1：第2题和第5题答案不相同；"><a href="#线索1：第2题和第5题答案不相同；" class="headerlink" title="线索1：第2题和第5题答案不相同；"></a>线索1：第2题和第5题答案不相同；</h4><h4 id="线索2：第2、3、4、6-题中有3个答案相同；"><a href="#线索2：第2、3、4、6-题中有3个答案相同；" class="headerlink" title="线索2：第2、3、4、6 题中有3个答案相同；"></a>线索2：第2、3、4、6 题中有3个答案相同；</h4><h4 id="线索3：-1-5-、-2-7-、-1-9-、-6-10-这四组中有一组答案相同；"><a href="#线索3：-1-5-、-2-7-、-1-9-、-6-10-这四组中有一组答案相同；" class="headerlink" title="线索3：(1,5)、 (2,7) 、(1,9)、 (6,10) 这四组中有一组答案相同；"></a>线索3：(1,5)、 (2,7) 、(1,9)、 (6,10) 这四组中有一组答案相同；</h4><h4 id="线索4：第4、7、8、9-题中有一题和第5题答案相同，其它与第5题不同；"><a href="#线索4：第4、7、8、9-题中有一题和第5题答案相同，其它与第5题不同；" class="headerlink" title="线索4：第4、7、8、9 题中有一题和第5题答案相同，其它与第5题不同；"></a>线索4：第4、7、8、9 题中有一题和第5题答案相同，其它与第5题不同；</h4><h4 id="线索5：第-2-4-、-1-6-、-3-10-、-5-9-题中有一组和第8题答案相同，其它与第8题不同；"><a href="#线索5：第-2-4-、-1-6-、-3-10-、-5-9-题中有一组和第8题答案相同，其它与第8题不同；" class="headerlink" title="线索5：第 (2,4)、 (1,6) 、(3,10) 、(5,9) 题中有一组和第8题答案相同，其它与第8题不同；"></a>线索5：第 (2,4)、 (1,6) 、(3,10) 、(5,9) 题中有一组和第8题答案相同，其它与第8题不同；</h4><h4 id="线索6：第2、5、7、10-题中有3题答案与第1题答案字母相连；"><a href="#线索6：第2、5、7、10-题中有3题答案与第1题答案字母相连；" class="headerlink" title="线索6：第2、5、7、10 题中有3题答案与第1题答案字母相连；"></a>线索6：第2、5、7、10 题中有3题答案与第1题答案字母相连；</h4><h4 id="线索7：第9题两句中有一句肯定是真的，另一句肯定是假的；"><a href="#线索7：第9题两句中有一句肯定是真的，另一句肯定是假的；" class="headerlink" title="线索7：第9题两句中有一句肯定是真的，另一句肯定是假的；"></a>线索7：第9题两句中有一句肯定是真的，另一句肯定是假的；</h4><h3 id="经过整理，-我们发现第7条线索给出的是一个逻辑判断的条件，那么一真一假之间，只需要最多验证两次假设即可，所以我们选择从第7条线索展开思考。"><a href="#经过整理，-我们发现第7条线索给出的是一个逻辑判断的条件，那么一真一假之间，只需要最多验证两次假设即可，所以我们选择从第7条线索展开思考。" class="headerlink" title="经过整理， 我们发现第7条线索给出的是一个逻辑判断的条件，那么一真一假之间，只需要最多验证两次假设即可，所以我们选择从第7条线索展开思考。"></a>经过整理， 我们发现第7条线索给出的是一个逻辑判断的条件，那么一真一假之间，只需要最多验证两次假设即可，所以我们选择从第7条线索展开思考。</h3><h3 id="分析线索7："><a href="#分析线索7：" class="headerlink" title="分析线索7："></a>分析线索7：</h3><h4 id="“第1题与第6题的答案相同”-与-“第X题与第5题的答案相同”-两句话的真假性相反，也就是说这两句话“一真一假”。"><a href="#“第1题与第6题的答案相同”-与-“第X题与第5题的答案相同”-两句话的真假性相反，也就是说这两句话“一真一假”。" class="headerlink" title="“第1题与第6题的答案相同” 与 “第X题与第5题的答案相同” 两句话的真假性相反，也就是说这两句话“一真一假”。"></a>“第1题与第6题的答案相同” 与 “第X题与第5题的答案相同” 两句话的真假性相反，也就是说这两句话“一真一假”。</h4><h4 id="先假设“第1题与第6题的答案相同”是真的。"><a href="#先假设“第1题与第6题的答案相同”是真的。" class="headerlink" title="先假设“第1题与第6题的答案相同”是真的。"></a>先假设“第1题与第6题的答案相同”是真的。</h4><h4 id="那么我们需要找出满足“第X题与第5题的答案相同”这句话是假的证据，也就是第X题和第5题答案不相同。"><a href="#那么我们需要找出满足“第X题与第5题的答案相同”这句话是假的证据，也就是第X题和第5题答案不相同。" class="headerlink" title="那么我们需要找出满足“第X题与第5题的答案相同”这句话是假的证据，也就是第X题和第5题答案不相同。"></a>那么我们需要找出满足“第X题与第5题的答案相同”这句话是假的证据，也就是第X题和第5题答案不相同。</h4><h4 id="因为是单选题的原因，选项中应该只存在一个答案不相同，其它三个答案应该都与第5题相同。"><a href="#因为是单选题的原因，选项中应该只存在一个答案不相同，其它三个答案应该都与第5题相同。" class="headerlink" title="因为是单选题的原因，选项中应该只存在一个答案不相同，其它三个答案应该都与第5题相同。"></a>因为是单选题的原因，选项中应该只存在一个答案不相同，其它三个答案应该都与第5题相同。</h4><h4 id="根据上面线索1判断，只有第2题答案不等于第5题，那么其它第1、6、9、10-题都是和第5题答案相同。"><a href="#根据上面线索1判断，只有第2题答案不等于第5题，那么其它第1、6、9、10-题都是和第5题答案相同。" class="headerlink" title="根据上面线索1判断，只有第2题答案不等于第5题，那么其它第1、6、9、10 题都是和第5题答案相同。"></a>根据上面线索1判断，只有第2题答案不等于第5题，那么其它第1、6、9、10 题都是和第5题答案相同。</h4><h4 id="这时我们发现这个结果违背了线索3，线索3中应该只有一组答案相同，但是-1-9-、-6-10-都是相同的。"><a href="#这时我们发现这个结果违背了线索3，线索3中应该只有一组答案相同，但是-1-9-、-6-10-都是相同的。" class="headerlink" title="这时我们发现这个结果违背了线索3，线索3中应该只有一组答案相同，但是(1,9) 、(6,10) 都是相同的。"></a>这时我们发现这个结果违背了线索3，线索3中应该只有一组答案相同，但是(1,9) 、(6,10) 都是相同的。</h4><h4 id="那么最后结论是“第1题与第6题的答案相同”的假设不成立，而“第X题与第5题的答案相同”是成立的。"><a href="#那么最后结论是“第1题与第6题的答案相同”的假设不成立，而“第X题与第5题的答案相同”是成立的。" class="headerlink" title="那么最后结论是“第1题与第6题的答案相同”的假设不成立，而“第X题与第5题的答案相同”是成立的。"></a>那么最后结论是“第1题与第6题的答案相同”的假设不成立，而“第X题与第5题的答案相同”是成立的。</h4><h4 id="这里X肯定不是C，因为线索1中确定了第2题和第5题答案不相同。"><a href="#这里X肯定不是C，因为线索1中确定了第2题和第5题答案不相同。" class="headerlink" title="这里X肯定不是C，因为线索1中确定了第2题和第5题答案不相同。"></a>这里X肯定不是C，因为线索1中确定了第2题和第5题答案不相同。</h4><h4 id="这里X肯定也不是D，因为第9题若是和第5题相同，则第5题答案是C，很明显D也是错的。"><a href="#这里X肯定也不是D，因为第9题若是和第5题相同，则第5题答案是C，很明显D也是错的。" class="headerlink" title="这里X肯定也不是D，因为第9题若是和第5题相同，则第5题答案是C，很明显D也是错的。"></a>这里X肯定也不是D，因为第9题若是和第5题相同，则第5题答案是C，很明显D也是错的。</h4><h3 id="增加线索："><a href="#增加线索：" class="headerlink" title="增加线索："></a>增加线索：</h3><h4 id="线索8：第1题和第6题答案不相同；"><a href="#线索8：第1题和第6题答案不相同；" class="headerlink" title="线索8：第1题和第6题答案不相同；"></a>线索8：第1题和第6题答案不相同；</h4><h4 id="线索9：第9题和第5题答案不相同；"><a href="#线索9：第9题和第5题答案不相同；" class="headerlink" title="线索9：第9题和第5题答案不相同；"></a>线索9：第9题和第5题答案不相同；</h4><h3 id="继续分析："><a href="#继续分析：" class="headerlink" title="继续分析："></a>继续分析：</h3><h4 id="这里X肯定也不是A，因为假设是A则第5题和第6题答案相同，就可以推论："><a href="#这里X肯定也不是A，因为假设是A则第5题和第6题答案相同，就可以推论：" class="headerlink" title="这里X肯定也不是A，因为假设是A则第5题和第6题答案相同，就可以推论："></a>这里X肯定也不是A，因为假设是A则第5题和第6题答案相同，就可以推论：</h4><h4 id="第5题和第6题答案都是A时：结果为第2、4、5、8题答案都相同，显示违背了线索1，不成立；"><a href="#第5题和第6题答案都是A时：结果为第2、4、5、8题答案都相同，显示违背了线索1，不成立；" class="headerlink" title="第5题和第6题答案都是A时：结果为第2、4、5、8题答案都相同，显示违背了线索1，不成立；"></a>第5题和第6题答案都是A时：结果为第2、4、5、8题答案都相同，显示违背了线索1，不成立；</h4><h4 id="第5题和第6题答案都是B时：第6题的选项B已经违背了线索8，不成立；"><a href="#第5题和第6题答案都是B时：第6题的选项B已经违背了线索8，不成立；" class="headerlink" title="第5题和第6题答案都是B时：第6题的选项B已经违背了线索8，不成立；"></a>第5题和第6题答案都是B时：第6题的选项B已经违背了线索8，不成立；</h4><h4 id="第5题和第6题答案都是C时：第5题选择C就已经违背了线索9，不成立；"><a href="#第5题和第6题答案都是C时：第5题选择C就已经违背了线索9，不成立；" class="headerlink" title="第5题和第6题答案都是C时：第5题选择C就已经违背了线索9，不成立；"></a>第5题和第6题答案都是C时：第5题选择C就已经违背了线索9，不成立；</h4><h4 id="第5题和第6题答案都是D时：第6题的选项D已经违背了线索9，不成立；"><a href="#第5题和第6题答案都是D时：第6题的选项D已经违背了线索9，不成立；" class="headerlink" title="第5题和第6题答案都是D时：第6题的选项D已经违背了线索9，不成立；"></a>第5题和第6题答案都是D时：第6题的选项D已经违背了线索9，不成立；</h4><h4 id="所以X的结果是B-第10题。"><a href="#所以X的结果是B-第10题。" class="headerlink" title="所以X的结果是B.第10题。"></a>所以X的结果是B.第10题。</h4><h3 id="增加线索：-1"><a href="#增加线索：-1" class="headerlink" title="增加线索："></a>增加线索：</h3><h4 id="线索10：第5题和第10题答案相同；"><a href="#线索10：第5题和第10题答案相同；" class="headerlink" title="线索10：第5题和第10题答案相同；"></a>线索10：第5题和第10题答案相同；</h4><h4 id="第9题分析完成，我们得出了第1个确定的答案："><a href="#第9题分析完成，我们得出了第1个确定的答案：" class="headerlink" title="第9题分析完成，我们得出了第1个确定的答案："></a>第9题分析完成，我们得出了第1个确定的答案：</h4><h4 id="第9题答案：B；"><a href="#第9题答案：B；" class="headerlink" title="第9题答案：B；"></a>第9题答案：B；</h4><h3 id="再来分析第6题：（选择第6题的原因是它给出的条件最多，越多的条件越容易找出反例）"><a href="#再来分析第6题：（选择第6题的原因是它给出的条件最多，越多的条件越容易找出反例）" class="headerlink" title="再来分析第6题：（选择第6题的原因是它给出的条件最多，越多的条件越容易找出反例）"></a>再来分析第6题：（选择第6题的原因是它给出的条件最多，越多的条件越容易找出反例）</h3><h4 id="第6题选A，则第2，4题和第8题答案相同是不成立的，证明如下："><a href="#第6题选A，则第2，4题和第8题答案相同是不成立的，证明如下：" class="headerlink" title="第6题选A，则第2，4题和第8题答案相同是不成立的，证明如下："></a>第6题选A，则第2，4题和第8题答案相同是不成立的，证明如下：</h4><h5 id="第2、4、8题答案都选A时："><a href="#第2、4、8题答案都选A时：" class="headerlink" title="第2、4、8题答案都选A时："></a>第2、4、8题答案都选A时：</h5><ul>
+<li>第2题选A：第5题的答案是C，第5题和第9题答案相同，这样违背了线索9，不成立；</li>
+</ul>
+<h5 id="第2、4、8题答案都选B时："><a href="#第2、4、8题答案都选B时：" class="headerlink" title="第2、4、8题答案都选B时："></a>第2、4、8题答案都选B时：</h5><ul>
+<li><p>第2题选B：第5题的答案是D，第5题和第7题答案相同，这样第7题答案也是D；</p>
+</li>
+<li><p>第4题选B：第2题和第7题答案相同，但当前第2题答案是B，显示也不成立；</p>
+</li>
+</ul>
+<h5 id="第2、4、8题答案都选C时："><a href="#第2、4、8题答案都选C时：" class="headerlink" title="第2、4、8题答案都选C时："></a>第2、4、8题答案都选C时：</h5><ul>
+<li><p>第4题选C：第1题和第9题答案相同，第1题答案就是B；</p>
+</li>
+<li><p>第8题选C：第2题和第1题答案不相邻，但现在第1题答案是B，第2题选择是C，相邻了不成立；</p>
+</li>
+</ul>
+<h5 id="第2、4、8题答案都选D时："><a href="#第2、4、8题答案都选D时：" class="headerlink" title="第2、4、8题答案都选D时："></a>第2、4、8题答案都选D时：</h5><ul>
+<li>第2题选D：第5题答案是B，第4题答案就和第5题相同也是B，可是当前第4题选择是D，不成立；</li>
+</ul>
+<h4 id="第6题选B，直接违背线索8，不成立。"><a href="#第6题选B，直接违背线索8，不成立。" class="headerlink" title="第6题选B，直接违背线索8，不成立。"></a>第6题选B，直接违背线索8，不成立。</h4><h4 id="第6题选D，直接违背线索9，不成立。"><a href="#第6题选D，直接违背线索9，不成立。" class="headerlink" title="第6题选D，直接违背线索9，不成立。"></a>第6题选D，直接违背线索9，不成立。</h4><h4 id="第9题分析完成，我们得出了第2个确定的答案："><a href="#第9题分析完成，我们得出了第2个确定的答案：" class="headerlink" title="第9题分析完成，我们得出了第2个确定的答案："></a>第9题分析完成，我们得出了第2个确定的答案：</h4><h3 id="第6题答案：C"><a href="#第6题答案：C" class="headerlink" title="第6题答案：C"></a>第6题答案：C</h3><h3 id="可以修改线索："><a href="#可以修改线索：" class="headerlink" title="可以修改线索："></a>可以修改线索：</h3><h4 id="线索11：第5，10，3，8题答案相同；"><a href="#线索11：第5，10，3，8题答案相同；" class="headerlink" title="线索11：第5，10，3，8题答案相同；"></a>线索11：第5，10，3，8题答案相同；</h4><h3 id="接下来可以直接得出其它答案了："><a href="#接下来可以直接得出其它答案了：" class="headerlink" title="接下来可以直接得出其它答案了："></a>接下来可以直接得出其它答案了：</h3><h4 id="第5题答案：A，通过第5题的题目与线索10判断；"><a href="#第5题答案：A，通过第5题的题目与线索10判断；" class="headerlink" title="第5题答案：A，通过第5题的题目与线索10判断；"></a>第5题答案：A，通过第5题的题目与线索10判断；</h4><h4 id="第3题答案：A，通过线索10判断；"><a href="#第3题答案：A，通过线索10判断；" class="headerlink" title="第3题答案：A，通过线索10判断；"></a>第3题答案：A，通过线索10判断；</h4><h4 id="第8题答案：A，通过线索10判断；"><a href="#第8题答案：A，通过线索10判断；" class="headerlink" title="第8题答案：A，通过线索10判断；"></a>第8题答案：A，通过线索10判断；</h4><h4 id="第10题答案：A，通过线索10判断；"><a href="#第10题答案：A，通过线索10判断；" class="headerlink" title="第10题答案：A，通过线索10判断；"></a>第10题答案：A，通过线索10判断；</h4><h4 id="第2题答案：C，通过第5题答案判断；"><a href="#第2题答案：C，通过第5题答案判断；" class="headerlink" title="第2题答案：C，通过第5题答案判断；"></a>第2题答案：C，通过第5题答案判断；</h4><h4 id="第7题答案：D，通过已有7个答案和第4题判断："><a href="#第7题答案：D，通过已有7个答案和第4题判断：" class="headerlink" title="第7题答案：D，通过已有7个答案和第4题判断："></a>第7题答案：D，通过已有7个答案和第4题判断：</h4><ul>
+<li><p>目前A答案有4个，B答案有1个，C答案有2个，D答案有0个；</p>
+</li>
+<li><p>第4题答案不可能是D，因为第6题答案和第10题答案不同；</p>
+</li>
+<li><p>第4题答案不可能是B，若第7题答案是C，而A答案结果不可能成为最少的；</p>
+</li>
+<li><p>第4题答案不可能是A，因为A答案有5个，这样无法同时满足第7题和第10题的描述；</p>
+</li>
+</ul>
+<h4 id="第4题答案：C，通过上面分析得出；"><a href="#第4题答案：C，通过上面分析得出；" class="headerlink" title="第4题答案：C，通过上面分析得出；"></a>第4题答案：C，通过上面分析得出；</h4><h4 id="第1题答案：B，通过第4题答案和第9题答案得出；"><a href="#第1题答案：B，通过第4题答案和第9题答案得出；" class="headerlink" title="第1题答案：B，通过第4题答案和第9题答案得出；"></a>第1题答案：B，通过第4题答案和第9题答案得出；</h4><h3 id="所以，-最终答案为"><a href="#所以，-最终答案为" class="headerlink" title="所以， 最终答案为"></a>所以， 最终答案为</h3><h4 id="1-B-2-C-3-A-4-C-5-A-6-C-7-D-8-A-9-B-10-A"><a href="#1-B-2-C-3-A-4-C-5-A-6-C-7-D-8-A-9-B-10-A" class="headerlink" title="1.B, 2.C, 3.A, 4.C, 5.A, 6.C, 7.D, 8.A, 9.B, 10.A"></a>1.B, 2.C, 3.A, 4.C, 5.A, 6.C, 7.D, 8.A, 9.B, 10.A</h4><h4 id="此文章仅供参考，如有疑问，请发送邮件至-2966653003-qq-com，-谢谢"><a href="#此文章仅供参考，如有疑问，请发送邮件至-2966653003-qq-com，-谢谢" class="headerlink" title="此文章仅供参考，如有疑问，请发送邮件至 2966653003@qq.com， 谢谢!"></a>此文章仅供参考，如有疑问，请发送邮件至 <a href="">2966653003@qq.com</a>， 谢谢!</h4>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Limit-Report/" class="category-chain-item">Limit-Report</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Report/">#Report</a>
+      
+        <a href="/tags/%E8%AE%B2%E8%A7%A3/">#讲解</a>
+      
+        <a href="/tags/%E9%80%BB%E8%BE%91%E6%8E%A8%E7%90%86/">#逻辑推理</a>
+      
+        <a href="/tags/%E5%88%91%E4%BE%A6%E7%A7%91/">#刑侦科</a>
+      
+        <a href="/tags/2018%E5%B9%B4%E5%88%91%E4%BE%A6%E7%A7%91%E6%8E%A8%E7%90%86%E8%AF%95%E9%A2%98/">#2018年刑侦科推理试题</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Limit-Report [4]</div>
+      <div>https://www.scorpio532992.ltd/2023/01/26/Limit-Report[4]/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Scorpio_Limit</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年1月26日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2023年1月26日</div>
+        </div>
+      
+      <div class="license-meta-item">
+        <div>许可协议</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+              <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                <i class="iconfont icon-nc"></i>
+              </span>
+              </a>
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+              <span class="hint--top hint--rounded" aria-label="ND - 禁止演绎">
+                <i class="iconfont icon-nd"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/12/04/Limit-Report%5B3%5D/" title="Limit-Report [3]">
+                        <span class="hidden-mobile">Limit-Report [3]</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://www.scorpio532992.ltd/" target="_blank" rel="nofollow noopener"><span>Limit-Blog</span></a> <i class="iconfont icon-love"></i> <a href="https://www.luogu.com.cn/user/532992" target="_blank" rel="nofollow noopener"><span>Scorpio_Limit</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
