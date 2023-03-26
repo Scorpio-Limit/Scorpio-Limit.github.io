@@ -6,7 +6,7 @@
   <link href="https://blog.scorpiolimit.top/atom.xml" rel="self"/>
   
   <link href="https://blog.scorpiolimit.top/"/>
-  <updated>2023-03-19T09:10:42.445Z</updated>
+  <updated>2023-03-26T10:55:45.042Z</updated>
   <id>https://blog.scorpiolimit.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自主开发 Windows 30</title>
+    <link href="https://blog.scorpiolimit.top/2023/03/26/windows30/"/>
+    <id>https://blog.scorpiolimit.top/2023/03/26/windows30/</id>
+    <published>2023-03-26T10:24:13.000Z</published>
+    <updated>2023-03-26T10:55:45.042Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Windows-30"><a href="#Windows-30" class="headerlink" title="Windows 30"></a>Windows 30</h1><h3 id="Windows-30-1"><a href="#Windows-30-1" class="headerlink" title="Windows 30"></a><a href="https://limit-realm.github.io/">Windows 30</a></h3><ul><li> 前言</li><li> 启发来源</li><li> 效果展示</li><li> 在线体验</li><li> 开发日志</li></ul><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本 Windows 30 由 <a href="https://github.com/Scorpio-Limit">Scorpio_Limit</a> 所开发， 此产品非微软正式开发！</p><h2 id="启发来源"><a href="#启发来源" class="headerlink" title="启发来源"></a>启发来源</h2><p>最近看到 Acerkaio 开发的 Windows 20 后深受启发，决定开发一个Windows 30 网页版</p><h2 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h2><p><img src="https://pic.imgdb.cn/item/64202274a682492fcccdfdd8.png"><br><img src="https://pic.imgdb.cn/item/642023ffa682492fccd020a7.jpg"><br><img src="https://pic.imgdb.cn/item/6420228ba682492fccce204f.png"><br><img src="https://pic.imgdb.cn/item/64202432a682492fccd06b1a.jpg"></p><h2 id="在线预览"><a href="#在线预览" class="headerlink" title="在线预览"></a>在线预览</h2><p><a href="https://limit-realm.github.io/">Windows 30</a></p><h2 id="开发日志"><a href="#开发日志" class="headerlink" title="开发日志"></a>开发日志</h2><ul><li>2023.1.29 初次开发，增加 Windows 30 部分内容的框架与开机动画</li><li>2023.2.4   增加任务栏与不完全化桌面</li><li>2023.2.10 增加 Windows 30 点击栏</li><li>2023.2.25 初次优化点击栏</li><li>2023.2.28 增加点击栏内容</li><li>2023.3.1   再次优化点击栏并增加 JS 判定</li><li>2023.3.12 开始开发背景更换器 Background Manager</li><li>2023.3.19 修复点击错误，继续开发背景更换器 Background Manager</li><li>2023.3.25 增加搜索引擎，不过目前功能较弱</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Windows-30&quot;&gt;&lt;a href=&quot;#Windows-30&quot; class=&quot;headerlink&quot; title=&quot;Windows 30&quot;&gt;&lt;/a&gt;Windows 30&lt;/h1&gt;&lt;h3 id=&quot;Windows-30-1&quot;&gt;&lt;a href=&quot;#Windows-3</summary>
+      
+    
+    
+    
+    <category term="Develop" scheme="https://blog.scorpiolimit.top/categories/Develop/"/>
+    
+    
+    <category term="Windows 30" scheme="https://blog.scorpiolimit.top/tags/Windows-30/"/>
+    
+  </entry>
   
   <entry>
     <title>SP30669题解</title>
