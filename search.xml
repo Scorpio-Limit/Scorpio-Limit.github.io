@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>自主开发 Windows 30</title>
-      <link href="/2023/03/26/windows30/"/>
-      <url>/2023/03/26/windows30/</url>
-      
-        <content type="html"><![CDATA[<h1 id="Windows-30"><a href="#Windows-30" class="headerlink" title="Windows 30"></a>Windows 30</h1><h3 id="Windows-30-1"><a href="#Windows-30-1" class="headerlink" title="Windows 30"></a><a href="https://limit-realm.github.io/">Windows 30</a></h3><ul><li> 前言</li><li> 启发来源</li><li> 效果展示</li><li> 在线体验</li><li> 开发日志</li></ul><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本 Windows 30 由 <a href="https://github.com/Scorpio-Limit">Scorpio_Limit</a> 所开发， 此产品非微软正式开发！</p><h2 id="启发来源"><a href="#启发来源" class="headerlink" title="启发来源"></a>启发来源</h2><p>最近看到 Acerkaio 开发的 Windows 20 后深受启发，决定开发一个Windows 30 网页版</p><h2 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h2><p><img src="https://pic.imgdb.cn/item/64202274a682492fcccdfdd8.png"><br><img src="https://pic.imgdb.cn/item/642023ffa682492fccd020a7.jpg"><br><img src="https://pic.imgdb.cn/item/6420228ba682492fccce204f.png"><br><img src="https://pic.imgdb.cn/item/64202432a682492fccd06b1a.jpg"></p><h2 id="在线预览"><a href="#在线预览" class="headerlink" title="在线预览"></a>在线预览</h2><p><a href="https://limit-realm.github.io/">Windows 30</a></p><h2 id="开发日志"><a href="#开发日志" class="headerlink" title="开发日志"></a>开发日志</h2><ul><li>2023.1.29 初次开发，增加 Windows 30 部分内容的框架与开机动画</li><li>2023.2.4   增加任务栏与不完全化桌面</li><li>2023.2.10 增加 Windows 30 点击栏</li><li>2023.2.25 初次优化点击栏</li><li>2023.2.28 增加点击栏内容</li><li>2023.3.1   再次优化点击栏并增加 JS 判定</li><li>2023.3.12 开始开发背景更换器 Background Manager</li><li>2023.3.19 修复点击错误，继续开发背景更换器 Background Manager</li><li>2023.3.25 增加搜索引擎，不过目前功能较弱</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> Develop </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Windows 30 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>SP30669题解</title>
       <link href="/2023/03/19/SP30669%E9%A2%98%E8%A7%A3/"/>
       <url>/2023/03/19/SP30669%E9%A2%98%E8%A7%A3/</url>
@@ -212,31 +187,6 @@
     
     
     <entry>
-      <title>Limit-Report [2]</title>
-      <link href="/2022/11/21/Limit-Report%5B2%5D/"/>
-      <url>/2022/11/21/Limit-Report%5B2%5D/</url>
-      
-        <content type="html"><![CDATA[<h2 id="祝我生日快乐！"><a href="#祝我生日快乐！" class="headerlink" title="祝我生日快乐！"></a>祝我生日快乐！</h2><h4 id="今天是-2022-年-11-月-21-日-这天即时我的生日-又是学校的运动会"><a href="#今天是-2022-年-11-月-21-日-这天即时我的生日-又是学校的运动会" class="headerlink" title="今天是 2022 年 11 月 21 日, 这天即时我的生日, 又是学校的运动会."></a>今天是 2022 年 11 月 21 日, 这天即时我的生日, 又是学校的运动会.</h4><h4 id="往后-我将会把有关数学、信息学、物理等知识和题解发布在此博客上-欢迎来访！"><a href="#往后-我将会把有关数学、信息学、物理等知识和题解发布在此博客上-欢迎来访！" class="headerlink" title="往后, 我将会把有关数学、信息学、物理等知识和题解发布在此博客上, 欢迎来访！"></a>往后, 我将会把有关数学、信息学、物理等知识和题解发布在此博客上, 欢迎来访！</h4><h4 id="在未来-我将会添加博客评论功能-尽情期待"><a href="#在未来-我将会添加博客评论功能-尽情期待" class="headerlink" title="在未来, 我将会添加博客评论功能, 尽情期待!"></a>在未来, 我将会添加博客评论功能, 尽情期待!</h4>]]></content>
-      
-      
-      <categories>
-          
-          <category> Limit-Report </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Report </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>CF1730A题解</title>
       <link href="/2022/09/30/Codeforces-Round823(Div.%202)%5BA.Planets%5D/"/>
       <url>/2022/09/30/Codeforces-Round823(Div.%202)%5BA.Planets%5D/</url>
@@ -262,66 +212,16 @@
     
     
     <entry>
-      <title>Limit-Report [1]</title>
-      <link href="/2022/08/30/Limit-Report%5B1%5D/"/>
-      <url>/2022/08/30/Limit-Report%5B1%5D/</url>
+      <title>Hello World</title>
+      <link href="/2022/08/30/hello/"/>
+      <url>/2022/08/30/hello/</url>
       
-        <content type="html"><![CDATA[<h4 id="Hello，-我是-Limit-Blog-的作者-Scorpio-Limit"><a href="#Hello，-我是-Limit-Blog-的作者-Scorpio-Limit" class="headerlink" title="Hello， 我是 Limit-Blog 的作者 Scorpio_Limit"></a>Hello， 我是 Limit-Blog 的作者 Scorpio_Limit</h4><h4 id="在-2022-08-30-这天，-我终于建造好了我的博客，-真不容易啊！"><a href="#在-2022-08-30-这天，-我终于建造好了我的博客，-真不容易啊！" class="headerlink" title="在 2022-08-30 这天， 我终于建造好了我的博客， 真不容易啊！"></a>在 2022-08-30 这天， 我终于建造好了我的博客， 真不容易啊！</h4><h4 id="而就在一天后，-也就是-9-1-这天，-我就开学了（不开森，-不情愿）"><a href="#而就在一天后，-也就是-9-1-这天，-我就开学了（不开森，-不情愿）" class="headerlink" title="而就在一天后， 也就是 9.1 这天， 我就开学了（不开森， 不情愿）"></a>而就在一天后， 也就是 9.1 这天， 我就开学了（不开森， 不情愿）</h4><h4 id="如对-Limit-Blog-有疑问、建议等问题，-请通过邮箱-2966653003-qq-com-反馈给我，-谢谢！"><a href="#如对-Limit-Blog-有疑问、建议等问题，-请通过邮箱-2966653003-qq-com-反馈给我，-谢谢！" class="headerlink" title="如对 Limit-Blog 有疑问、建议等问题， 请通过邮箱 2966653003@qq.com 反馈给我， 谢谢！"></a>如对 Limit-Blog 有疑问、建议等问题， 请通过邮箱 <a href="">2966653003@qq.com</a> 反馈给我， 谢谢！</h4>]]></content>
-      
-      
-      <categories>
-          
-          <category> Limit-Report </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Report </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Welcome to Limit-Blog</title>
-      <link href="/2022/08/30/welcome/"/>
-      <url>/2022/08/30/welcome/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Welcome-to-Limit-Blog"><a href="#Welcome-to-Limit-Blog" class="headerlink" title="Welcome to Limit-Blog!"></a>Welcome to <a href="https://blog.scorpiolimit.top/">Limit-Blog</a>!</h2><h3 id="Limit-Bolg"><a href="#Limit-Bolg" class="headerlink" title="Limit-Bolg"></a>Limit-Bolg</h3><p> 建立时间: 2022年08月30日<br> 建立人员: <a href="https://github.com/Scorpio-Limit">Scorpio_Limit</a></p>]]></content>
+        <content type="html"><![CDATA[<h4 id="「人生若只如初见，何事秋风悲画扇」"><a href="#「人生若只如初见，何事秋风悲画扇」" class="headerlink" title="「人生若只如初见，何事秋风悲画扇」"></a>「人生若只如初见，何事秋风悲画扇」</h4><h4 id="大家好！我是-Scorpio-Limit，相遇即是缘分，感谢您能在百忙之中浏览这个网页，作为一个普普通通的-OIer，我将在次博客中分享学科知识、题目解题思路题解、生活日常、和一些有趣的东西。"><a href="#大家好！我是-Scorpio-Limit，相遇即是缘分，感谢您能在百忙之中浏览这个网页，作为一个普普通通的-OIer，我将在次博客中分享学科知识、题目解题思路题解、生活日常、和一些有趣的东西。" class="headerlink" title="大家好！我是 Scorpio_Limit，相遇即是缘分，感谢您能在百忙之中浏览这个网页，作为一个普普通通的 OIer，我将在次博客中分享学科知识、题目解题思路题解、生活日常、和一些有趣的东西。"></a>大家好！我是 Scorpio_Limit，相遇即是缘分，感谢您能在百忙之中浏览这个网页，作为一个普普通通的 OIer，我将在次博客中分享学科知识、题目解题思路题解、生活日常、和一些有趣的东西。</h4><h4 id="若对本博客有疑问、建议等问题，-请通过邮箱-2966653003-qq-com-向作者反馈，-谢谢配合！"><a href="#若对本博客有疑问、建议等问题，-请通过邮箱-2966653003-qq-com-向作者反馈，-谢谢配合！" class="headerlink" title="若对本博客有疑问、建议等问题， 请通过邮箱 2966653003@qq.com 向作者反馈， 谢谢配合！"></a>若对本博客有疑问、建议等问题， 请通过邮箱 <a href="">2966653003@qq.com</a> 向作者反馈， 谢谢配合！</h4>]]></content>
       
       
       <categories>
           
-          <category> Limit-Blog </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Welcome </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Limit-Blog [About]</title>
-      <link href="/2022/08/30/about/"/>
-      <url>/2022/08/30/about/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Limit-Blog-的建立"><a href="#Limit-Blog-的建立" class="headerlink" title="Limit-Blog 的建立"></a>Limit-Blog 的建立</h2><h4 id="开发者：Scorpio-Limit"><a href="#开发者：Scorpio-Limit" class="headerlink" title="开发者：Scorpio_Limit"></a>开发者：<a href="https://github.com/Scorpio-Limit">Scorpio_Limit</a></h4><h4 id="成立时间：2022年8月30日"><a href="#成立时间：2022年8月30日" class="headerlink" title="成立时间：2022年8月30日"></a>成立时间：2022年8月30日</h4><h2 id="Limit-Blog-内容概述"><a href="#Limit-Blog-内容概述" class="headerlink" title="Limit-Blog 内容概述"></a>Limit-Blog 内容概述</h2><h4 id="本站将记录一些-Scorpio-Limit-所创作编写的文章以及一些活动"><a href="#本站将记录一些-Scorpio-Limit-所创作编写的文章以及一些活动" class="headerlink" title="本站将记录一些 Scorpio_Limit 所创作编写的文章以及一些活动"></a>本站将记录一些 Scorpio_Limit 所创作编写的文章以及一些活动</h4><h2 id="Limit-Blog-功能介绍"><a href="#Limit-Blog-功能介绍" class="headerlink" title="Limit-Blog 功能介绍"></a>Limit-Blog 功能介绍</h2><h4 id="Limit-Blog-的每个栏目均在网页上方，-点击顶栏左边的-“Limit-Blog”-将返回-Limit-Blog-的主页面"><a href="#Limit-Blog-的每个栏目均在网页上方，-点击顶栏左边的-“Limit-Blog”-将返回-Limit-Blog-的主页面" class="headerlink" title="Limit-Blog 的每个栏目均在网页上方， 点击顶栏左边的 “Limit-Blog” 将返回 Limit-Blog 的主页面"></a>Limit-Blog 的每个栏目均在网页上方， 点击顶栏左边的 “Limit-Blog” 将返回 <a href="https://blog.scorpiolimit.top/">Limit-Blog 的主页面</a></h4><h4 id="Limit-Blog-的每篇文章均开启评论功能（请合理评论，-不合规的评论将会被-Scorpio-Limit-删除）；同时，-未经过-Scorpio-Limit-同意，-禁止转载任何一篇文章"><a href="#Limit-Blog-的每篇文章均开启评论功能（请合理评论，-不合规的评论将会被-Scorpio-Limit-删除）；同时，-未经过-Scorpio-Limit-同意，-禁止转载任何一篇文章" class="headerlink" title="Limit-Blog 的每篇文章均开启评论功能（请合理评论， 不合规的评论将会被 Scorpio_Limit 删除）；同时， 未经过 Scorpio_Limit 同意， 禁止转载任何一篇文章"></a>Limit-Blog 的每篇文章均开启评论功能（请合理评论， 不合规的评论将会被 Scorpio_Limit 删除）；同时， 未经过 Scorpio_Limit 同意， 禁止转载任何一篇文章</h4><h2 id="Limit-Blog-问题反馈"><a href="#Limit-Blog-问题反馈" class="headerlink" title="Limit-Blog 问题反馈"></a>Limit-Blog 问题反馈</h2><h4 id="若对-Limit-Blog-有疑问、建议等问题，-请通过邮箱-2966653003-qq-com-向-Scorpio-Limit-反馈，-谢谢配合"><a href="#若对-Limit-Blog-有疑问、建议等问题，-请通过邮箱-2966653003-qq-com-向-Scorpio-Limit-反馈，-谢谢配合" class="headerlink" title="若对 Limit-Blog 有疑问、建议等问题， 请通过邮箱 2966653003@qq.com 向 Scorpio_Limit 反馈， 谢谢配合"></a>若对 Limit-Blog 有疑问、建议等问题， 请通过邮箱 <a href="">2966653003@qq.com</a> 向 Scorpio_Limit 反馈， 谢谢配合</h4>]]></content>
-      
-      
-      <categories>
-          
-          <category> Limit-Blog </category>
+          <category> Hello </category>
           
       </categories>
       
