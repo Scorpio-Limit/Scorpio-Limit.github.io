@@ -173,13 +173,6 @@
 
   
   <url>
-    <loc>https://blog.scorpiolimit.top/tags/Codeforces/</loc>
-    <lastmod>2023-07-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.scorpiolimit.top/tags/%E8%AE%B2%E8%A7%A3/</loc>
     <lastmod>2023-07-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -208,6 +201,13 @@
   </url>
   
   <url>
+    <loc>https://blog.scorpiolimit.top/tags/Codeforces/</loc>
+    <lastmod>2023-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.scorpiolimit.top/tags/SPOJ/</loc>
     <lastmod>2023-07-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -215,14 +215,14 @@
   </url>
   
   <url>
-    <loc>https://blog.scorpiolimit.top/tags/Welcome/</loc>
+    <loc>https://blog.scorpiolimit.top/tags/UVA/</loc>
     <lastmod>2023-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.scorpiolimit.top/tags/UVA/</loc>
+    <loc>https://blog.scorpiolimit.top/tags/Welcome/</loc>
     <lastmod>2023-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -245,14 +245,14 @@
 
   
   <url>
-    <loc>https://blog.scorpiolimit.top/categories/Problem-Explanation/</loc>
+    <loc>https://blog.scorpiolimit.top/categories/%E5%AD%A6%E6%9C%AF/</loc>
     <lastmod>2023-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.scorpiolimit.top/categories/%E5%AD%A6%E6%9C%AF/</loc>
+    <loc>https://blog.scorpiolimit.top/categories/Problem-Explanation/</loc>
     <lastmod>2023-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
